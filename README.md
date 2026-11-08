@@ -5,6 +5,8 @@
 
 Fieldnotes è un’app indipendente per studiare, esercitarsi e simulare l’esame **Claude Certified Associate – Foundations (CCAO-F)**. Offre lezioni in italiano e inglese, **124 domande originali bilingui** e una **simulazione completa da 60 quesiti in 120 minuti** per Associate. È un sito statico: non servono account, API key, backend o servizi a pagamento.
 
+**[Apri Fieldnotes online](https://mrsecret35.github.io/Anthropic_certipication_prep/) · [Vai alla simulazione Associate](https://mrsecret35.github.io/Anthropic_certipication_prep/#/exam?cert=associate-foundations)**
+
 > **Progetto indipendente, non ufficiale.** Non è affiliato ad Anthropic né da essa approvato. I quesiti sono originali, non riproducono domande riservate o reali d’esame. Il punteggio di Fieldnotes non equivale al punteggio scalato ufficiale e non predice il superamento dell’esame.
 
 ## Avvio rapido
@@ -106,6 +108,8 @@ React, TypeScript e Vite generano il sito statico. Le rotte vengono caricate qua
 ## Pubblicazione su GitHub Pages
 
 Il workflow [Verifica e deploy](.github/workflows/deploy.yml) esegue `npm ci`, validazione, test e build. Le pull request eseguono le verifiche; i push a `main` e gli avvii manuali preparano e pubblicano `dist/`.
+
+Per pubblicare un fork:
 
 1. Nel repository, apri **Settings → Pages → Build and deployment** e seleziona **GitHub Actions** come sorgente.
 2. In **Actions**, esegui **Validate and deploy GitHub Pages** (o fai un push a `main`).
