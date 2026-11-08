@@ -3,9 +3,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   BookOpen,
-  Code2,
-  Compass,
-  Network,
   Check,
   Circle,
   Clock3,
@@ -24,7 +21,7 @@ import {
   TextLink,
   Notice,
 } from "../components/ui";
-const icons = [BookOpen, Code2, Network, Compass];
+import { AssociateAtlas } from "../components/AssociateAtlas";
 export function useCompletion(certId: string) {
   const { progress } = useApp();
   const list = modules.filter((m) => m.certificationId === certId);
@@ -43,104 +40,61 @@ export default function Certifications() {
   const recent = modules.find((m) => m.id === opened[0]?.[0]);
   return (
     <div className="page home-page">
-      <PageHeading
-        eyebrow={t("YOUR NEXT CHAPTER", "IL TUO PROSSIMO CAPITOLO")}
-        title={t("Build understanding.", "Costruisci conoscenza.")}
-        description={t(
-          "The confidence comes with practice. Choose your path and take the next step.",
-          "La sicurezza arriva con la pratica. Scegli il tuo percorso e fai il prossimo passo.",
-        )}
-        action={
-          <span className="free-note">
-            <span />{" "}
-            {t(
-              "Free to learn. Yours to keep.",
-              "Gratis per imparare. Tuo per sempre.",
-            )}
-          </span>
-        }
-      />
-      <section className="welcome-panel">
-        <div className="welcome-copy">
-          <span className="eyebrow">
-            {recent
-              ? t("PICK UP WHERE YOU LEFT OFF", "RIPRENDI DA DOVE ERI")
-              : t("A GOOD PLACE TO BEGIN", "IL POSTO GIUSTO PER INIZIARE")}
-          </span>
-          <h2>
-            {recent
-              ? text(recent.title)
-              : t(
-                  "Small steps. Lasting knowledge.",
-                  "Piccoli passi. Conoscenze durature.",
-                )}
-          </h2>
+      <section className="atlas-intro" aria-labelledby="atlas-title">
+        <div className="atlas-copy">
+          <h1 id="atlas-title">{t("Study atlas.", "Atlante di studio.")}</h1>
           <p>
-            {recent
-              ? t(
-                  "Your next study session is already waiting. Pick a short review or go a little deeper.",
-                  "La prossima sessione ti aspetta. Scegli un ripasso breve o approfondisci.",
-                )
-              : t(
-                  "New to Claude certifications? Start with Associate Foundations. Learn the essentials, test your understanding, and let each answer guide what comes next.",
-                  "Le certificazioni Claude sono una novità? Inizia da Associate Foundations. Studia le basi, verifica ciò che sai e lascia che ogni risposta guidi il prossimo passo.",
-                )}
+            {t(
+              "Prepare for Claude certifications. Choose a path, try the exam, and use your answers to find what to study next.",
+              "Preparati alle certificazioni Claude. Scegli un percorso, prova l’esame e usa le tue risposte per capire cosa ripassare.",
+            )}
           </p>
-          <Link
-            className="button"
-            to={
-              recent
-                ? `/study/${recent.id}`
-                : "/certification/associate-foundations"
-            }
-          >
-            {recent
-              ? t("Continue studying", "Continua a studiare")
-              : t(
-                  "Explore the Associate path",
-                  "Esplora il percorso Associate",
-                )}
-            <ArrowRight size={17} />
-          </Link>
-        </div>
-        <div className="notebook-visual" aria-hidden="true">
-          <div className="notebook-tab">FIELDNOTES / 01</div>
-          <div className="notebook-cover">
-            <BookOpen size={27} strokeWidth={1.2} />
-            <div>
-              Learn.
-              <br />
-              Apply.
-              <br />
-              <em>Understand.</em>
-            </div>
-            <span>ONE GOOD QUESTION AT A TIME</span>
+          <div className="atlas-actions">
+            <Link
+              className="button"
+              to={
+                recent
+                  ? `/study/${recent.id}`
+                  : "/certification/associate-foundations"
+              }
+            >
+              {recent
+                ? t("Resume studying", "Riprendi lo studio")
+                : t("Explore Associate", "Esplora Associate")}
+              <ArrowRight size={17} />
+            </Link>
+            <Link
+              className="atlas-exam-link"
+              to="/exam?cert=associate-foundations"
+            >
+              {t("Open simulator", "Apri il simulatore")}
+              <ArrowUpRight size={16} />
+            </Link>
           </div>
-          <div className="note-pencil" />
+          {recent && (
+            <p className="atlas-recent">
+              {t("Last lesson:", "Ultima lezione:")} {text(recent.title)}
+            </p>
+          )}
         </div>
+        <AssociateAtlas />
       </section>
-      <div className="section-heading">
-        <div>
-          <h2>
-            {t("Choose your certification", "Scegli la tua certificazione")}
+      <section className="atlas-index" aria-labelledby="atlas-index-title">
+        <div className="atlas-index-heading">
+          <h2 id="atlas-index-title">
+            {t("Certification index", "Indice dei percorsi")}
           </h2>
           <p>
             {t(
-              "Four paths. One thoughtful way to prepare.",
-              "Quattro percorsi. Un modo consapevole di prepararsi.",
+              "Four paths · study in English or Italian",
+              "Quattro percorsi · studio in italiano e inglese",
             )}
           </p>
         </div>
-        <span className="small-label">
-          {t("LEARN AT YOUR OWN PACE", "IMPARA AL TUO RITMO")}
-        </span>
-      </div>
-      <div className="certification-grid">
-        {certifications.map((c, i) => (
-          <CertificationCard
+        {certifications.map((c) => (
+          <CertificationRecord
             key={c.id}
             certId={c.id}
-            index={i}
             onSelect={() =>
               update((p) => ({
                 ...p,
@@ -149,12 +103,9 @@ export default function Certifications() {
             }
           />
         ))}
-      </div>
+      </section>
       <section className="learning-loop">
         <div>
-          <span className="eyebrow">
-            {t("A BETTER WAY TO PREPARE", "PREPARARSI CON METODO")}
-          </span>
           <h2>
             {t(
               "Every answer points you forward.",
@@ -207,19 +158,19 @@ export default function Certifications() {
     </div>
   );
 }
-function CertificationCard({
+function CertificationRecord({
   certId,
-  index,
   onSelect,
 }: {
   certId: string;
-  index: number;
   onSelect: () => void;
 }) {
   const { t, text, progress } = useApp();
   const c = certifications.find((c) => c.id === certId)!;
   const completion = useCompletion(c.id);
-  const Icon = icons[index];
+  const questionCount = questions.filter(
+    (q) => q.certificationId === c.id && q.verified,
+  ).length;
   const last = Math.max(
     0,
     ...modules
@@ -229,79 +180,58 @@ function CertificationCard({
       .filter((a) => a.certificationId === c.id)
       .map((a) => a.submittedAt ?? 0),
   );
+
   return (
-    <article className={`cert-card cert-tone-${index}`}>
-      <div className="cert-card-top">
-        <span className="cert-icon">
-          <Icon size={24} strokeWidth={1.5} />
-        </span>
-        <span className="cert-code">{c.code}</span>
-        <span className="badge">{text(c.level)}</span>
-      </div>
-      <Link
-        className="cert-title"
-        to={`/certification/${c.id}`}
-        onClick={onSelect}
-      >
-        <span className="cert-title-prefix">Claude Certified</span>
+    <article className="atlas-record">
+      <span className="atlas-record-code">{c.code}</span>
+      <div className="atlas-record-content">
         <h3>
-          {text(c.role)}
-          <ArrowUpRight size={21} />
+          <Link to={`/certification/${c.id}`} onClick={onSelect}>
+            {text(c.role)} <span>· {text(c.level)}</span>
+          </Link>
         </h3>
-      </Link>
-      <p className="cert-description">{text(c.description)}</p>
-      <div className="cert-counts">
-        <span>
-          <BookOpen size={14} />
+        <p>{text(c.description)}</p>
+        <p className="atlas-record-meta">
           {completion.total}{" "}
           {completion.total === 1
             ? t("module", "modulo")
             : t("modules", "moduli")}
-        </span>
+          <span aria-hidden="true"> · </span>
+          {questionCount} {t("questions", "domande")}
+          <span aria-hidden="true"> · </span>
+          {c.coverage === "starter"
+            ? t("Starter content", "Contenuti iniziali")
+            : t("Full mock available", "Simulazione completa")}
+        </p>
+      </div>
+      <div className="atlas-record-progress">
         <span>
-          <ListChecks size={14} />
-          {questions.filter((q) => q.certificationId === c.id).length}{" "}
-          {t("questions", "domande")}
+          {t("Study progress", "Avanzamento")}{" "}
+          <strong>{completion.percentage}%</strong>
         </span>
+        <ProgressBar
+          value={completion.percentage}
+          label={t("Learning completion", "Completamento dello studio")}
+        />
+        {last > 0 && (
+          <span>
+            {t("Last activity:", "Ultima attività:")}{" "}
+            {new Intl.DateTimeFormat(progress.settings.language, {
+              day: "numeric",
+              month: "short",
+            }).format(last)}
+          </span>
+        )}
       </div>
-      <div className="card-progress-label">
-        <span>{t("Learning progress", "Avanzamento dello studio")}</span>
-        <strong>{completion.percentage}%</strong>
-      </div>
-      <ProgressBar
-        value={completion.percentage}
-        label={t("Learning completion", "Completamento dello studio")}
-      />
-      <div className="card-bottom">
-        <span>
-          {last
-            ? new Intl.DateTimeFormat(progress.settings.language, {
-                day: "numeric",
-                month: "short",
-              }).format(last)
-            : t("Your fresh start", "Il tuo nuovo inizio")}
-          {last > 0 && <small>{t("Last activity", "Ultima attività")}</small>}
-        </span>
-        <Link
-          className="card-action"
-          to={last ? `/study?cert=${c.id}` : `/certification/${c.id}`}
-          onClick={onSelect}
-        >
-          {last ? t("Continue", "Continua") : t("Explore path", "Esplora")}
-          <ArrowRight size={16} />
-        </Link>
-      </div>
-      <span className="coverage-note">
-        {c.coverage === "starter"
-          ? t(
-              "Starter content · more domains to come",
-              "Contenuti iniziali · altri domini in arrivo",
-            )
-          : t(
-              "All 7 domains · full practice exam available",
-              "Tutti i 7 domini · simulazione completa disponibile",
-            )}
-      </span>
+      <Link
+        className="atlas-record-action"
+        to={last ? `/study?cert=${c.id}` : `/certification/${c.id}`}
+        onClick={onSelect}
+        aria-label={`${last ? t("Continue", "Continua") : t("Explore", "Esplora")} ${text(c.role)} ${text(c.level)}`}
+      >
+        {last ? t("Continue", "Continua") : t("Explore", "Esplora")}
+        <ArrowUpRight size={17} />
+      </Link>
     </article>
   );
 }

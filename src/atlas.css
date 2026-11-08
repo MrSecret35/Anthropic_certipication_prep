@@ -1,0 +1,324 @@
+.home-page {
+  padding-top: clamp(34px, 5vw, 72px);
+}
+.atlas-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 65px);
+  padding-bottom: clamp(32px, 5vw, 64px);
+  border-bottom: 1px solid var(--line);
+}
+.atlas-copy h1 {
+  max-width: 9ch;
+  font-size: clamp(58px, 6.8vw, 90px);
+  line-height: 0.96;
+  letter-spacing: -0.039em;
+  text-wrap: balance;
+}
+.atlas-copy > p {
+  max-width: 44ch;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.atlas-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px 18px;
+  margin-top: 24px;
+}
+.atlas-actions .button {
+  min-height: 44px;
+  font-size: 13px;
+}
+.atlas-exam-link,
+.atlas-lesson-link,
+.atlas-record-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 600;
+}
+.atlas-exam-link,
+.atlas-record-action {
+  color: var(--accent);
+}
+.atlas-exam-link:hover,
+.atlas-lesson-link:hover,
+.atlas-record-action:hover,
+.atlas-record-content a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.atlas-copy > .atlas-recent {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.atlas-plate {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0;
+  background: var(--chart);
+  color: var(--chart-ink);
+}
+.atlas-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 21px;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--chart-grid) 40%, transparent);
+  font-size: 13px;
+  font-weight: 600;
+}
+.atlas-caption > span:last-child {
+  color: var(--chart-muted);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+}
+.atlas-caption small {
+  display: block;
+  margin-top: 3px;
+  color: var(--chart-muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+.atlas-map {
+  position: relative;
+  aspect-ratio: 520 / 248;
+}
+.atlas-map > svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.atlas-gridlines {
+  color: var(--chart-grid);
+  opacity: 0.23;
+}
+.atlas-contours {
+  stroke: var(--chart-grid);
+  stroke-width: 1;
+  opacity: 0.52;
+}
+.atlas-route-halo,
+.atlas-route {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.atlas-route-halo {
+  stroke: var(--chart);
+  stroke-width: 8;
+}
+.atlas-route {
+  stroke: var(--locator);
+  stroke-width: 2;
+  stroke-dasharray: 3 6;
+}
+.atlas-waypoint {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: clamp(30px, 3vw, 39px);
+  aspect-ratio: 1;
+  padding: 0;
+  border: 1px solid var(--chart-muted);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--chart);
+  color: var(--chart-ink);
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+.atlas-waypoint:hover,
+.atlas-waypoint[aria-pressed="true"] {
+  background: var(--locator);
+  color: #171e3b;
+  border-color: var(--locator);
+}
+.atlas-plate :focus-visible {
+  outline: 2px solid var(--locator);
+  outline-offset: 3px;
+}
+.atlas-legend {
+  min-height: 94px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 21px;
+  border-top: 1px solid color-mix(in srgb, var(--chart-grid) 40%, transparent);
+}
+.atlas-domain {
+  display: grid;
+  gap: 3px;
+}
+.atlas-domain strong {
+  font-family: "STIX Two Text", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 500;
+}
+.atlas-domain > span {
+  color: var(--chart-muted);
+  font-size: 11px;
+}
+.atlas-lesson-link {
+  color: var(--locator);
+  white-space: nowrap;
+}
+.atlas-index {
+  margin-top: clamp(28px, 4vw, 48px);
+}
+.atlas-index-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 20px;
+  padding-bottom: 17px;
+}
+.atlas-index-heading h2 {
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.1;
+}
+.atlas-index-heading p {
+  color: var(--muted);
+  font-size: 13px;
+}
+.atlas-record {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) minmax(92px, 135px) auto;
+  gap: 10px 24px;
+  align-items: start;
+  padding: 18px 0;
+}
+.atlas-record:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.atlas-record-code {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  padding-top: 5px;
+}
+.atlas-record-content h3 {
+  font:
+    500 clamp(23px, 2.6vw, 31px)/1.14 "STIX Two Text",
+    Georgia,
+    serif;
+  letter-spacing: -0.022em;
+}
+.atlas-record-content h3 span {
+  color: var(--muted);
+  font-weight: 400;
+}
+.atlas-record-content p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.atlas-record-content .atlas-record-meta {
+  color: var(--accent);
+  font-size: 12px;
+  margin-top: 8px;
+}
+.atlas-record-progress {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  padding-top: 6px;
+}
+.atlas-record-progress > span:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.atlas-record-progress strong {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.atlas-record-action {
+  justify-self: end;
+  min-height: 36px;
+}
+@media (max-width: 1020px) {
+  .atlas-intro {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .atlas-copy h1 {
+    max-width: none;
+    font-size: clamp(48px, 8vw, 71px);
+  }
+  .atlas-plate {
+    max-width: 640px;
+  }
+}
+@media (max-width: 620px) {
+  .home-page {
+    padding-top: 30px;
+  }
+  .atlas-intro {
+    gap: 24px;
+  }
+  .atlas-copy h1 {
+    font-size: clamp(42px, 10vw, 58px);
+  }
+  .atlas-copy > p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .atlas-actions {
+    gap: 6px 13px;
+    margin-top: 16px;
+  }
+  .atlas-actions .button,
+  .atlas-exam-link {
+    font-size: 12px;
+  }
+  .atlas-caption,
+  .atlas-legend {
+    padding-inline: 13px;
+  }
+  .atlas-domain strong {
+    font-size: 17px;
+  }
+  .atlas-legend {
+    min-height: 80px;
+  }
+  .atlas-lesson-link {
+    font-size: 11px;
+  }
+  .atlas-record {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 13px;
+  }
+  .atlas-record-code,
+  .atlas-record-content {
+    grid-column: 1 / -1;
+  }
+  .atlas-record-progress {
+    max-width: 160px;
+  }
+  .atlas-record-action {
+    align-self: end;
+  }
+}

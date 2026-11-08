@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T22:17:03Z",
+  "title": "Design System: Fieldnotes",
+  "extensions": {
+    "colorMeta": {
+      "ultramarine": {
+        "role": "primary",
+        "displayName": "Ultramarine",
+        "tonalRamp": [
+          "oklch(15% 0.169 266.3)",
+          "oklch(26% 0.169 266.3)",
+          "oklch(37% 0.169 266.3)",
+          "oklch(48% 0.169 266.3)",
+          "oklch(60% 0.169 266.3)",
+          "oklch(72% 0.169 266.3)",
+          "oklch(84% 0.169 266.3)",
+          "oklch(95% 0.169 266.3)"
+        ]
+      },
+      "ultramarine-hover": {
+        "role": "primary",
+        "displayName": "Ultramarine Hover",
+        "tonalRamp": [
+          "oklch(15% 0.153 266.6)",
+          "oklch(26% 0.153 266.6)",
+          "oklch(37% 0.153 266.6)",
+          "oklch(48% 0.153 266.6)",
+          "oklch(60% 0.153 266.6)",
+          "oklch(72% 0.153 266.6)",
+          "oklch(84% 0.153 266.6)",
+          "oklch(95% 0.153 266.6)"
+        ]
+      },
+      "blue-wash": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "tonalRamp": [
+          "oklch(15% 0.031 271.7)",
+          "oklch(26% 0.031 271.7)",
+          "oklch(37% 0.031 271.7)",
+          "oklch(48% 0.031 271.7)",
+          "oklch(60% 0.031 271.7)",
+          "oklch(72% 0.031 271.7)",
+          "oklch(84% 0.031 271.7)",
+          "oklch(95% 0.031 271.7)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Accent",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(37% 0.000 89.9)",
+          "oklch(48% 0.000 89.9)",
+          "oklch(60% 0.000 89.9)",
+          "oklch(72% 0.000 89.9)",
+          "oklch(84% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "chart-blue": {
+        "role": "primary",
+        "displayName": "Chart Blue",
+        "tonalRamp": [
+          "oklch(15% 0.169 266.5)",
+          "oklch(26% 0.169 266.5)",
+          "oklch(37% 0.169 266.5)",
+          "oklch(48% 0.169 266.5)",
+          "oklch(60% 0.169 266.5)",
+          "oklch(72% 0.169 266.5)",
+          "oklch(84% 0.169 266.5)",
+          "oklch(95% 0.169 266.5)"
+        ]
+      },
+      "chart-ink": {
+        "role": "primary",
+        "displayName": "Chart Ink",
+        "tonalRamp": [
+          "oklch(15% 0.004 286.3)",
+          "oklch(26% 0.004 286.3)",
+          "oklch(37% 0.004 286.3)",
+          "oklch(48% 0.004 286.3)",
+          "oklch(60% 0.004 286.3)",
+          "oklch(72% 0.004 286.3)",
+          "oklch(84% 0.004 286.3)",
+          "oklch(95% 0.004 286.3)"
+        ]
+      },
+      "chart-label": {
+        "role": "primary",
+        "displayName": "Chart Label",
+        "tonalRamp": [
+          "oklch(15% 0.039 273.0)",
+          "oklch(26% 0.039 273.0)",
+          "oklch(37% 0.039 273.0)",
+          "oklch(48% 0.039 273.0)",
+          "oklch(60% 0.039 273.0)",
+          "oklch(72% 0.039 273.0)",
+          "oklch(84% 0.039 273.0)",
+          "oklch(95% 0.039 273.0)"
+        ]
+      },
+      "chart-grid": {
+        "role": "primary",
+        "displayName": "Chart Grid",
+        "tonalRamp": [
+          "oklch(15% 0.087 271.5)",
+          "oklch(26% 0.087 271.5)",
+          "oklch(37% 0.087 271.5)",
+          "oklch(48% 0.087 271.5)",
+          "oklch(60% 0.087 271.5)",
+          "oklch(72% 0.087 271.5)",
+          "oklch(84% 0.087 271.5)",
+          "oklch(95% 0.087 271.5)"
+        ]
+      },
+      "locator-yellow": {
+        "role": "secondary",
+        "displayName": "Locator Yellow",
+        "tonalRamp": [
+          "oklch(15% 0.096 88.5)",
+          "oklch(26% 0.096 88.5)",
+          "oklch(37% 0.096 88.5)",
+          "oklch(48% 0.096 88.5)",
+          "oklch(60% 0.096 88.5)",
+          "oklch(72% 0.096 88.5)",
+          "oklch(84% 0.096 88.5)",
+          "oklch(95% 0.096 88.5)"
+        ]
+      },
+      "completion-green": {
+        "role": "tertiary",
+        "displayName": "Completion Green",
+        "tonalRamp": [
+          "oklch(15% 0.073 167.8)",
+          "oklch(26% 0.073 167.8)",
+          "oklch(37% 0.073 167.8)",
+          "oklch(48% 0.073 167.8)",
+          "oklch(60% 0.073 167.8)",
+          "oklch(72% 0.073 167.8)",
+          "oklch(84% 0.073 167.8)",
+          "oklch(95% 0.073 167.8)"
+        ]
+      },
+      "completion-wash": {
+        "role": "tertiary",
+        "displayName": "Completion Wash",
+        "tonalRamp": [
+          "oklch(15% 0.017 168.5)",
+          "oklch(26% 0.017 168.5)",
+          "oklch(37% 0.017 168.5)",
+          "oklch(48% 0.017 168.5)",
+          "oklch(60% 0.017 168.5)",
+          "oklch(72% 0.017 168.5)",
+          "oklch(84% 0.017 168.5)",
+          "oklch(95% 0.017 168.5)"
+        ]
+      },
+      "error-rose": {
+        "role": "tertiary",
+        "displayName": "Error Rose",
+        "tonalRamp": [
+          "oklch(15% 0.144 11.5)",
+          "oklch(26% 0.144 11.5)",
+          "oklch(37% 0.144 11.5)",
+          "oklch(48% 0.144 11.5)",
+          "oklch(60% 0.144 11.5)",
+          "oklch(72% 0.144 11.5)",
+          "oklch(84% 0.144 11.5)",
+          "oklch(95% 0.144 11.5)"
+        ]
+      },
+      "cool-paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "tonalRamp": [
+          "oklch(15% 0.007 277.2)",
+          "oklch(26% 0.007 277.2)",
+          "oklch(37% 0.007 277.2)",
+          "oklch(48% 0.007 277.2)",
+          "oklch(60% 0.007 277.2)",
+          "oklch(72% 0.007 277.2)",
+          "oklch(84% 0.007 277.2)",
+          "oklch(95% 0.007 277.2)"
+        ]
+      },
+      "raised-paper": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "tonalRamp": [
+          "oklch(15% 0.003 286.4)",
+          "oklch(26% 0.003 286.4)",
+          "oklch(37% 0.003 286.4)",
+          "oklch(48% 0.003 286.4)",
+          "oklch(60% 0.003 286.4)",
+          "oklch(72% 0.003 286.4)",
+          "oklch(84% 0.003 286.4)",
+          "oklch(95% 0.003 286.4)"
+        ]
+      },
+      "sidebar-paper": {
+        "role": "neutral",
+        "displayName": "Sidebar Paper",
+        "tonalRamp": [
+          "oklch(15% 0.015 270.0)",
+          "oklch(26% 0.015 270.0)",
+          "oklch(37% 0.015 270.0)",
+          "oklch(48% 0.015 270.0)",
+          "oklch(60% 0.015 270.0)",
+          "oklch(72% 0.015 270.0)",
+          "oklch(84% 0.015 270.0)",
+          "oklch(95% 0.015 270.0)"
+        ]
+      },
+      "navy-ink": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "tonalRamp": [
+          "oklch(15% 0.056 271.5)",
+          "oklch(26% 0.056 271.5)",
+          "oklch(37% 0.056 271.5)",
+          "oklch(48% 0.056 271.5)",
+          "oklch(60% 0.056 271.5)",
+          "oklch(72% 0.056 271.5)",
+          "oklch(84% 0.056 271.5)",
+          "oklch(95% 0.056 271.5)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15% 0.047 267.9)",
+          "oklch(26% 0.047 267.9)",
+          "oklch(37% 0.047 267.9)",
+          "oklch(48% 0.047 267.9)",
+          "oklch(60% 0.047 267.9)",
+          "oklch(72% 0.047 267.9)",
+          "oklch(84% 0.047 267.9)",
+          "oklch(95% 0.047 267.9)"
+        ]
+      },
+      "rule-blue": {
+        "role": "neutral",
+        "displayName": "Rule Blue",
+        "tonalRamp": [
+          "oklch(15% 0.032 267.9)",
+          "oklch(26% 0.032 267.9)",
+          "oklch(37% 0.032 267.9)",
+          "oklch(48% 0.032 267.9)",
+          "oklch(60% 0.032 267.9)",
+          "oklch(72% 0.032 267.9)",
+          "oklch(84% 0.032 267.9)",
+          "oklch(95% 0.032 267.9)"
+        ]
+      },
+      "soft-rule": {
+        "role": "neutral",
+        "displayName": "Soft Rule",
+        "tonalRamp": [
+          "oklch(15% 0.018 269.1)",
+          "oklch(26% 0.018 269.1)",
+          "oklch(37% 0.018 269.1)",
+          "oklch(48% 0.018 269.1)",
+          "oklch(60% 0.018 269.1)",
+          "oklch(72% 0.018 269.1)",
+          "oklch(84% 0.018 269.1)",
+          "oklch(95% 0.018 269.1)"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "tonalRamp": [
+          "oklch(15% 0.040 270.2)",
+          "oklch(26% 0.040 270.2)",
+          "oklch(37% 0.040 270.2)",
+          "oklch(48% 0.040 270.2)",
+          "oklch(60% 0.040 270.2)",
+          "oklch(72% 0.040 270.2)",
+          "oklch(84% 0.040 270.2)",
+          "oklch(95% 0.040 270.2)"
+        ]
+      },
+      "night-panel": {
+        "role": "neutral",
+        "displayName": "Night Panel",
+        "tonalRamp": [
+          "oklch(15% 0.054 270.4)",
+          "oklch(26% 0.054 270.4)",
+          "oklch(37% 0.054 270.4)",
+          "oklch(48% 0.054 270.4)",
+          "oklch(60% 0.054 270.4)",
+          "oklch(72% 0.054 270.4)",
+          "oklch(84% 0.054 270.4)",
+          "oklch(95% 0.054 270.4)"
+        ]
+      },
+      "night-sidebar": {
+        "role": "neutral",
+        "displayName": "Night Sidebar",
+        "tonalRamp": [
+          "oklch(15% 0.041 269.9)",
+          "oklch(26% 0.041 269.9)",
+          "oklch(37% 0.041 269.9)",
+          "oklch(48% 0.041 269.9)",
+          "oklch(60% 0.041 269.9)",
+          "oklch(72% 0.041 269.9)",
+          "oklch(84% 0.041 269.9)",
+          "oklch(95% 0.041 269.9)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "tonalRamp": [
+          "oklch(15% 0.018 279.1)",
+          "oklch(26% 0.018 279.1)",
+          "oklch(37% 0.018 279.1)",
+          "oklch(48% 0.018 279.1)",
+          "oklch(60% 0.018 279.1)",
+          "oklch(72% 0.018 279.1)",
+          "oklch(84% 0.018 279.1)",
+          "oklch(95% 0.018 279.1)"
+        ]
+      },
+      "night-muted": {
+        "role": "neutral",
+        "displayName": "Night Muted",
+        "tonalRamp": [
+          "oklch(15% 0.045 271.2)",
+          "oklch(26% 0.045 271.2)",
+          "oklch(37% 0.045 271.2)",
+          "oklch(48% 0.045 271.2)",
+          "oklch(60% 0.045 271.2)",
+          "oklch(72% 0.045 271.2)",
+          "oklch(84% 0.045 271.2)",
+          "oklch(95% 0.045 271.2)"
+        ]
+      },
+      "night-rule": {
+        "role": "neutral",
+        "displayName": "Night Rule",
+        "tonalRamp": [
+          "oklch(15% 0.067 268.4)",
+          "oklch(26% 0.067 268.4)",
+          "oklch(37% 0.067 268.4)",
+          "oklch(48% 0.067 268.4)",
+          "oklch(60% 0.067 268.4)",
+          "oklch(72% 0.067 268.4)",
+          "oklch(84% 0.067 268.4)",
+          "oklch(95% 0.067 268.4)"
+        ]
+      },
+      "night-accent": {
+        "role": "primary",
+        "displayName": "Night Accent",
+        "tonalRamp": [
+          "oklch(15% 0.091 272.6)",
+          "oklch(26% 0.091 272.6)",
+          "oklch(37% 0.091 272.6)",
+          "oklch(48% 0.091 272.6)",
+          "oklch(60% 0.091 272.6)",
+          "oklch(72% 0.091 272.6)",
+          "oklch(84% 0.091 272.6)",
+          "oklch(95% 0.091 272.6)"
+        ]
+      },
+      "night-chart": {
+        "role": "primary",
+        "displayName": "Night Chart",
+        "tonalRamp": [
+          "oklch(15% 0.115 269.5)",
+          "oklch(26% 0.115 269.5)",
+          "oklch(37% 0.115 269.5)",
+          "oklch(48% 0.115 269.5)",
+          "oklch(60% 0.115 269.5)",
+          "oklch(72% 0.115 269.5)",
+          "oklch(84% 0.115 269.5)",
+          "oklch(95% 0.115 269.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Atlas title."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Lesson paragraphs."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Standard button labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "modal-light",
+        "value": "0 8px 40px #17265416",
+        "purpose": "Ambient depth under a modal in the light theme."
+      },
+      {
+        "name": "modal-dark",
+        "value": "0 8px 40px #050a2360",
+        "purpose": "Ambient depth under a modal in the dark theme."
+      },
+      {
+        "name": "selected-segment",
+        "value": "0 1px 3px #20282009",
+        "purpose": "A slight lift for a selected segment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "150ms ease",
+        "purpose": "Button and navigation state changes."
+      },
+      {
+        "name": "waypoint-transition",
+        "value": "160ms ease",
+        "purpose": "Waypoint background and text changes."
+      },
+      {
+        "name": "menu-transition",
+        "value": "200ms ease",
+        "purpose": "The narrow-screen sidebar slides into view."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-rail",
+        "value": "1200px"
+      },
+      {
+        "name": "stacked-atlas",
+        "value": "1020px"
+      },
+      {
+        "name": "stacked-workspace",
+        "value": "1000px"
+      },
+      {
+        "name": "navigation-drawer",
+        "value": "760px"
+      },
+      {
+        "name": "compact-atlas",
+        "value": "620px"
+      },
+      {
+        "name": "compact-workspace",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on paper.",
+      "html": "<button type=\"button\" class=\"ds-btn-primary\">Resume study</button>",
+      "css": ".ds-btn-primary { font-family: \"DM Sans\", sans-serif; cursor: pointer; } .ds-btn-primary { background: var(--accent, #2544ab); color: var(--on-accent, #ffffff); display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid transparent; border-radius: 6px; min-height: 42px; padding: 11px 17px; font-size: 12px; font-weight: 500; line-height: 1.4; transition: background 0.15s, border-color 0.15s; text-align: center; } .ds-btn-primary:hover:not(:disabled) { background: var(--accent-hover, #1b348f); } .ds-btn-primary:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } .ds-btn-primary:disabled { opacity: .5; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-primary { transition: none; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A supporting action with a fine outline.",
+      "html": "<button type=\"button\" class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary { font-family: \"DM Sans\", sans-serif; cursor: pointer; } .ds-btn-secondary { background: var(--accent, #2544ab); color: var(--on-accent, #ffffff); display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid transparent; border-radius: 6px; min-height: 42px; padding: 11px 17px; font-size: 12px; font-weight: 500; line-height: 1.4; transition: background 0.15s, border-color 0.15s; text-align: center; } .ds-btn-secondary:hover:not(:disabled) { background: var(--accent-hover, #1b348f); } .ds-btn-secondary { background: transparent; border-color: var(--line, #c9d2e8); color: var(--ink, #171e3b); } .ds-btn-secondary:hover:not(:disabled) { background: var(--line-soft, #e4e9f6); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } .ds-btn-secondary:disabled { opacity: .5; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-secondary { transition: none; } }"
+    },
+    {
+      "name": "Small Button",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "A compact action for dense controls.",
+      "html": "<button type=\"button\" class=\"ds-btn-small\">Export backup</button>",
+      "css": ".ds-btn-small { font-family: \"DM Sans\", sans-serif; cursor: pointer; } .ds-btn-small { background: var(--accent, #2544ab); color: var(--on-accent, #ffffff); display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid transparent; border-radius: 6px; min-height: 42px; padding: 11px 17px; font-size: 12px; font-weight: 500; line-height: 1.4; transition: background 0.15s, border-color 0.15s; text-align: center; } .ds-btn-small:hover:not(:disabled) { background: var(--accent-hover, #1b348f); } .ds-btn-small { min-height: 36px; font-size: 11px; padding: 8px 12px; } .ds-btn-small:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } .ds-btn-small:disabled { opacity: .5; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-small { transition: none; } }"
+    },
+    {
+      "name": "Destructive Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "The confirmation action for a destructive change.",
+      "html": "<button type=\"button\" class=\"ds-btn-danger\">Reset progress</button>",
+      "css": ".ds-btn-danger { font-family: \"DM Sans\", sans-serif; cursor: pointer; } .ds-btn-danger { background: var(--accent, #2544ab); color: var(--on-accent, #ffffff); display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid transparent; border-radius: 6px; min-height: 42px; padding: 11px 17px; font-size: 12px; font-weight: 500; line-height: 1.4; transition: background 0.15s, border-color 0.15s; text-align: center; } .ds-btn-danger:hover:not(:disabled) { background: var(--accent-hover, #1b348f); } .ds-btn-danger { background: var(--wrong, #9d3048); color: var(--on-accent, #ffffff); } .ds-btn-danger:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } .ds-btn-danger:disabled { opacity: .5; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-danger { transition: none; } }"
+    },
+    {
+      "name": "Outlined Destructive Button",
+      "kind": "button",
+      "refersTo": "button-danger-outline",
+      "description": "The outlined destructive action.",
+      "html": "<button type=\"button\" class=\"ds-btn-danger-outline\">Reset progress</button>",
+      "css": ".ds-btn-danger-outline { font-family: \"DM Sans\", sans-serif; cursor: pointer; } .ds-btn-danger-outline { background: var(--accent, #2544ab); color: var(--on-accent, #ffffff); display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid transparent; border-radius: 6px; min-height: 42px; padding: 11px 17px; font-size: 12px; font-weight: 500; line-height: 1.4; transition: background 0.15s, border-color 0.15s; text-align: center; } .ds-btn-danger-outline:hover:not(:disabled) { background: var(--accent-hover, #1b348f); } .ds-btn-danger-outline { color: var(--wrong, #9d3048); border: 1px solid var(--wrong, #9d3048); background: none; } .ds-btn-danger-outline:hover:not(:disabled) { background: var(--accent-soft, #e2e9ff); } .ds-btn-danger-outline:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } .ds-btn-danger-outline:disabled { opacity: .5; cursor: not-allowed; } @media (prefers-reduced-motion: reduce) { .ds-btn-danger-outline { transition: none; } }"
+    },
+    {
+      "name": "Number Field",
+      "kind": "input",
+      "refersTo": "number-field",
+      "description": "A numeric control on raised paper.",
+      "html": "<label class=\"ds-field\">Time limit <input class=\"ds-field-input\" type=\"number\" min=\"1\" max=\"240\" value=\"120\" aria-label=\"Time limit in minutes\"></label>",
+      "css": ".ds-field { font-family: \"DM Sans\", sans-serif; display: block; color: var(--ink, #171e3b); font-size: 12px; font-weight: 500; } .ds-field-input { background: var(--paper, #fdfdff); border: 1px solid var(--line, #c9d2e8); border-radius: 5px; color: var(--ink, #171e3b); padding: 12px; width: 100%; font-size: 12px; line-height: 1.5; } .ds-field-input { font-family: \"DM Sans\", sans-serif; box-sizing: border-box; display: block; margin-top: 9px; } .ds-field-input:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; }"
+    },
+    {
+      "name": "Current Navigation Item",
+      "kind": "nav",
+      "refersTo": "nav-current",
+      "description": "The current destination in the sidebar.",
+      "html": "<nav aria-label=\"Workspace\"><a class=\"ds-nav-item\" href=\"#/\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 2 10 5-10 5L2 7l10-5ZM2 12l10 5 10-5M2 17l10 5 10-5\"/></svg>Certifications</a></nav>",
+      "css": ".ds-nav-item { display: flex; align-items: center; gap: 12px; padding: 12px 13px; border-radius: 6px; font-size: 13px; font-weight: 500; min-height: 44px; color: var(--muted, #515c78); transition: background 0.15s, color 0.15s; } .ds-nav-item:hover { background: var(--line-soft, #e4e9f6); color: var(--ink, #171e3b); } .ds-nav-item[aria-current=\"page\"] { background: var(--accent-soft, #e2e9ff); color: var(--accent, #2544ab); font-weight: 700; } .ds-nav-item { font-family: \"DM Sans\", sans-serif; box-sizing: border-box; text-decoration: none; } .ds-nav-item:focus-visible { outline: 2px solid var(--focus, #2145bc); outline-offset: 4px; } @media (prefers-reduced-motion: reduce) { .ds-nav-item { transition: none; } }"
+    },
+    {
+      "name": "Metadata Badge",
+      "kind": "chip",
+      "refersTo": "metadata-badge",
+      "description": "A compact outlined label for a code or mode.",
+      "html": "<span class=\"ds-badge\">CCAO-F</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; font-size: 9px; font-weight: 500; line-height: 1.5; padding: 4px 8px; border: 1px solid var(--line, #c9d2e8); border-radius: 4px; color: var(--muted, #515c78); max-width: 100%; } .ds-badge { font-family: \"DM Sans\", sans-serif; }"
+    },
+    {
+      "name": "Paper Panel",
+      "kind": "card",
+      "refersTo": "paper-panel",
+      "description": "A bounded panel for simulator controls.",
+      "html": "<section class=\"ds-paper-panel\"><h2>Exam configuration</h2><p>60 questions · 120 minutes</p></section>",
+      "css": ".ds-paper-panel { background: var(--paper, #fdfdff); border: 1px solid var(--line, #c9d2e8); padding: 26px; border-radius: 8px; } .ds-paper-panel { color: var(--ink, #171e3b); } .ds-paper-panel h2 { font: 400 25px/1.35 \"STIX Two Text\", Georgia, serif; letter-spacing: -.035em; margin: 0; } .ds-paper-panel p { font-family: \"DM Sans\", sans-serif; color: var(--muted, #515c78); font-size: 13px; line-height: 1.65; margin: 0; }"
+    },
+    {
+      "name": "Domain Chart",
+      "kind": "custom",
+      "refersTo": "domain-chart",
+      "description": "The cartographic plate in its selected state.",
+      "html": "<figure class=\"ds-atlas-plate\"><figcaption class=\"ds-atlas-caption\"><div>Domain chart<small>Study domains along the route.</small></div><span>CCAO-F</span></figcaption><div class=\"ds-atlas-map\"><svg viewBox=\"0 0 520 248\" aria-hidden=\"true\"><defs><pattern id=\"ds-grid-pattern\" width=\"26\" height=\"26\" patternUnits=\"userSpaceOnUse\"><path d=\"M26 0H0V26\" fill=\"none\" stroke=\"currentColor\"/></pattern></defs><rect class=\"ds-atlas-gridlines\" width=\"520\" height=\"248\" fill=\"url(#ds-grid-pattern)\"/><g class=\"ds-atlas-contours\" fill=\"none\"><path d=\"M-15 89C32 112 82 76 85 41S113 4 153 1M-8 106C48 123 99 89 103 52S137 6 177 5M-7 126C72 131 117 93 124 58S156 12 204 8M-9 147C75 150 136 115 146 71S180 24 232 18M-13 172C78 169 157 137 170 88S202 40 260 31\" /> <path d=\"M253 258C278 217 323 205 378 217S454 209 479 179S509 153 536 151M275 262C300 227 337 225 380 234S467 224 494 193S515 172 535 173M305 265C331 242 352 243 392 250S476 239 506 209S525 196 539 196M219 258C250 209 308 187 373 199S439 190 462 165S504 131 534 132\" /></g><path class=\"ds-atlas-route-halo\" d=\"M46,178 L117.333,113 L188.667,157 L260,73 L331.333,125 L402.667,54 L474,104\"/><path class=\"ds-atlas-route\" d=\"M46,178 L117.333,113 L188.667,157 L260,73 L331.333,125 L402.667,54 L474,104\"/></svg><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:8.846%;top:71.774%\" aria-pressed=\"true\">01</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:22.564%;top:45.565%\" aria-pressed=\"false\">02</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:36.282%;top:63.306%\" aria-pressed=\"false\">03</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:50.000%;top:29.435%\" aria-pressed=\"false\">04</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:63.718%;top:50.403%\" aria-pressed=\"false\">05</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:77.436%;top:21.774%\" aria-pressed=\"false\">06</button><button class=\"ds-atlas-waypoint\" type=\"button\" style=\"left:91.154%;top:41.935%\" aria-pressed=\"false\">07</button></div><div class=\"ds-atlas-legend\"><div class=\"ds-atlas-domain\"><strong>Prompting and task execution</strong><span>14% of the blueprint</span></div><a class=\"ds-atlas-lesson-link\" href=\"#/study/af-prompting\">Open lesson</a></div></figure>",
+      "css": ".ds-atlas-plate { min-width: 0; overflow: hidden; border-radius: 12px; margin: 0; background: var(--chart, #203da4); color: var(--chart-ink, #fcfcff); } .ds-atlas-caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 21px; border-bottom: 1px solid color-mix(in srgb, var(--chart-grid, #b1c3ff) 40%, transparent); font-size: 13px; font-weight: 600; } .ds-atlas-caption > span:last-child { color: var(--chart-muted, #dbe3ff); font-size: 11px; letter-spacing: 0.09em; } .ds-atlas-caption small { display: block; margin-top: 3px; color: var(--chart-muted, #dbe3ff); font-size: 11px; font-weight: 400; } .ds-atlas-map { position: relative; aspect-ratio: 520 / 248; } .ds-atlas-map > svg { width: 100%; height: 100%; display: block; } .ds-atlas-gridlines { color: var(--chart-grid, #b1c3ff); opacity: 0.23; } .ds-atlas-contours { stroke: var(--chart-grid, #b1c3ff); stroke-width: 1; opacity: 0.52; } .ds-atlas-route-halo, .ds-atlas-route { fill: none; stroke-linecap: round; stroke-linejoin: round; } .ds-atlas-route-halo { stroke: var(--chart, #203da4); stroke-width: 8; } .ds-atlas-route { fill: none; stroke-linecap: round; stroke-linejoin: round; } .ds-atlas-waypoint { position: absolute; display: grid; place-items: center; width: clamp(30px, 3vw, 39px); aspect-ratio: 1; padding: 0; border: 1px solid var(--chart-muted, #dbe3ff); border-radius: 50%; transform: translate(-50%, -50%); background: var(--chart, #203da4); color: var(--chart-ink, #fcfcff); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; transition: background 160ms ease, color 160ms ease; } .ds-atlas-waypoint:hover, .ds-atlas-waypoint[aria-pressed=\"true\"] { background: var(--locator, #ffe29a); color: #171e3b; border-color: var(--locator, #ffe29a); } .ds-atlas-plate :focus-visible { outline: 2px solid var(--locator, #ffe29a); outline-offset: 3px; } .ds-atlas-legend { min-height: 94px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 13px 21px; border-top: 1px solid color-mix(in srgb, var(--chart-grid, #b1c3ff) 40%, transparent); } .ds-atlas-domain { display: grid; gap: 3px; } .ds-atlas-domain strong { font-family: \"STIX Two Text\", Georgia, serif; font-size: 21px; line-height: 1.15; font-weight: 500; } .ds-atlas-domain > span { color: var(--chart-muted, #dbe3ff); font-size: 11px; } .ds-atlas-lesson-link { color: var(--locator, #ffe29a); white-space: nowrap; } .ds-atlas-plate, .ds-atlas-waypoint { font-family: \"DM Sans\", sans-serif; } .ds-atlas-legend { box-sizing: border-box; } .ds-atlas-waypoint { cursor: pointer; } .ds-atlas-lesson-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; text-decoration: none; } .ds-atlas-lesson-link:hover { text-decoration: underline; text-underline-offset: 4px; } @media (max-width: 620px) { .ds-atlas-caption, .ds-atlas-legend { padding-inline: 13px; } .ds-atlas-legend { min-height: 80px; } .ds-atlas-domain strong { font-size: 17px; } .ds-atlas-lesson-link { font-size: 11px; } } @media (prefers-reduced-motion: reduce) { .ds-atlas-waypoint { transition: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Study Atlas",
+    "overview": "Fieldnotes uses the materials of a printed atlas. A quiet paper field frames open editorial typography, precise rules and a saturated chart. The permanent desktop navigation provides a stable point of reference.\n\nThe interface gives lessons room to read and keeps practice controls compact. Charts orient learners within real study material. The cartographic mark and lettering give Fieldnotes a distinct identity.",
+    "keyCharacteristics": [
+      "Cool paper, navy type and ultramarine controls.",
+      "Editorial serif titles with compact sans-serif controls.",
+      "Flat paper surfaces, ruled indexes and numbered waypoints.",
+      "Visible keyboard focus and paired light and dark themes."
+    ],
+    "rules": [
+      {
+        "name": "The Locator Rule",
+        "body": "Keep locator yellow inside the chart for its route, active point, keyboard focus and lesson link.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Hierarchy Rule",
+        "body": "Use the serif for titles and domain names. Set controls, captions and data in the sans-serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Keep the chart, index rows and standard panels flat. Reserve shadows for the modal and the selected segment.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do separate adjacent index records with rules and leave enough space for names and progress to wrap.",
+      "Do pair progress and answer states with text or numbers.",
+      "Do keep keyboard focus visible on paper and inside the chart."
+    ],
+    "donts": [
+      "Don't add stock illustrations or charts without a study task.",
+      "Don't imitate the certification provider's marks."
+    ]
+  }
+}

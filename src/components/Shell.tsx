@@ -77,9 +77,13 @@ export default function Shell() {
       </a>
       <aside className={`sidebar ${menu ? "is-open" : ""}`}>
         <Link to="/" className="brand">
-          <span className="brand-mark">
-            f<span>n</span>
-          </span>
+          <img
+            className="brand-mark"
+            src="./favicon.svg"
+            alt=""
+            width={38}
+            height={38}
+          />
           <span>
             fieldnotes
             <span className="brand-sub">CLAUDE CERTIFICATION PREP</span>
@@ -152,10 +156,7 @@ export default function Shell() {
               <BookOpen size={16} />
             </span>
             <span>
-              {t(
-                "A little progress, every day.",
-                "Un passo avanti, ogni giorno.",
-              )}
+              {t("Fieldnotes study atlas", "Fieldnotes · Atlante di studio")}
             </span>
           </div>
           <div className="topbar-controls">

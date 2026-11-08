@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @theme {
   --font-sans: "DM Sans", sans-serif;
-  --font-serif: "Lora", Georgia, serif;
+  --font-serif: "STIX Two Text", Georgia, serif;
 }
 :root {
   font-family: "DM Sans", sans-serif;
@@ -10,42 +10,55 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --bg: #f8f7f3;
-  --paper: #fffefa;
-  --sidebar: #f0efea;
-  --ink: #30322e;
-  --muted: #686b62;
-  --line: #dedfd6;
-  --line-soft: #e9e9e1;
-  --accent: #a94e35;
-  --accent-hover: #8e3f2b;
-  --accent-soft: #f6e9e1;
-  --green: #49634b;
-  --green-soft: #eaf0e5;
-  --focus: #a94e35;
-  --hero: #eceee4;
-  --wrong: #a14037;
-  --shadow: 0 8px 40px #26282012;
-  --blue: #50647b;
+  --bg: #f4f5fa;
+  --paper: #fdfdff;
+  --sidebar: #e9edf8;
+  --ink: #171e3b;
+  --muted: #515c78;
+  --line: #c9d2e8;
+  --line-soft: #e4e9f6;
+  --accent: #2544ab;
+  --accent-hover: #1b348f;
+  --accent-soft: #e2e9ff;
+  --on-accent: #ffffff;
+  --green: #23624d;
+  --green-soft: #e1efe9;
+  --focus: #2145bc;
+  --hero: #e9efff;
+  --wrong: #9d3048;
+  --shadow: 0 8px 40px #17265416;
+  --blue: #3456a4;
+  --chart: #203da4;
+  --chart-ink: #fcfcff;
+  --chart-muted: #dbe3ff;
+  --chart-grid: #b1c3ff;
+  --locator: #ffe29a;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #20231f;
-  --paper: #282c26;
-  --sidebar: #1b1e1a;
-  --ink: #eaece1;
-  --muted: #b1b6a8;
-  --line: #43483f;
-  --line-soft: #363c32;
-  --accent: #e7a487;
-  --accent-hover: #f4b79d;
-  --accent-soft: #48352b;
-  --green: #a7bea0;
-  --green-soft: #313f2e;
-  --focus: #e7a487;
-  --hero: #30392a;
-  --wrong: #eea29a;
-  --blue: #a7bfd8;
+  --bg: #13192d;
+  --paper: #1c2440;
+  --sidebar: #10162a;
+  --ink: #f0f2ff;
+  --muted: #b6c0df;
+  --line: #404e75;
+  --line-soft: #2a3557;
+  --accent: #afc0ff;
+  --accent-hover: #cfdaff;
+  --accent-soft: #293a6b;
+  --on-accent: #121d42;
+  --green: #9ad8bd;
+  --green-soft: #243e40;
+  --focus: #b8caff;
+  --hero: #222f56;
+  --wrong: #ffafbe;
+  --shadow: 0 8px 40px #050a2360;
+  --blue: #a9c0ff;
+  --chart: #202f71;
+  --chart-ink: #f4f6ff;
+  --chart-muted: #d4dfff;
+  --chart-grid: #9eb3f8;
+  --locator: #ffe29a;
 }
 * {
   box-sizing: border-box;
@@ -118,12 +131,12 @@ p {
 }
 h1,
 h2 {
-  font-family: "Lora", Georgia, serif;
+  font-family: "STIX Two Text", Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.035em;
 }
 h1 {
-  font-size: clamp(30px, 3.3vw, 44px);
+  font-size: clamp(32px, 3.8vw, 52px);
   line-height: 1.2;
 }
 h2 {
@@ -187,30 +200,17 @@ svg {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: -1.2px;
-  margin-bottom: 52px;
+  font:
+    500 31px/1 "STIX Two Text",
+    Georgia,
+    serif;
+  letter-spacing: -0.035em;
+  margin-bottom: 44px;
 }
 .brand-mark {
-  width: 34px;
-  height: 37px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent);
-  color: var(--paper);
-  font-family: "Lora", serif;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -5px;
-  padding-right: 5px;
-  border-radius: 5px;
-  transform: rotate(-4deg);
-}
-.brand-mark span {
-  font-size: 21px;
-  margin-top: 9px;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
 }
 .brand-sub {
   display: block;
@@ -260,9 +260,9 @@ svg {
   color: var(--ink);
 }
 .nav-item.active {
-  background: var(--paper);
+  background: var(--accent-soft);
   color: var(--accent);
-  box-shadow: 0 1px 3px #22222205;
+  font-weight: 700;
 }
 .sidebar-bottom {
   margin-top: auto;
@@ -275,8 +275,7 @@ svg {
   font-size: 11px;
   font-weight: 500;
 }
-.local-indicator > span,
-.free-note > span {
+.local-indicator > span {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -384,7 +383,6 @@ svg {
   max-width: 1240px;
   margin: 0 auto;
   padding: 44px 48px 55px;
-  animation: arrive 0.2s ease;
 }
 .page-heading {
   display: flex;
@@ -404,18 +402,9 @@ svg {
   max-width: 640px;
   line-height: 1.8;
 }
-.free-note {
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  white-space: nowrap;
-  padding-top: 28px;
-  color: var(--muted);
-}
 .button {
   background: var(--accent);
-  color: var(--paper);
+  color: var(--on-accent);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -429,15 +418,11 @@ svg {
   line-height: 1.4;
   transition:
     background 0.15s,
-    transform 0.15s;
+    border-color 0.15s;
   text-align: center;
 }
 .button:hover:not(:disabled) {
   background: var(--accent-hover);
-  transform: translateY(-1px);
-}
-:root[data-theme="dark"] .button:not(.secondary):not(.danger-outline) {
-  color: #24271f;
 }
 .button.secondary {
   background: transparent;
@@ -454,6 +439,7 @@ svg {
 }
 .button.danger {
   background: var(--wrong);
+  color: var(--on-accent);
 }
 .button.danger-outline {
   color: var(--wrong);
@@ -490,120 +476,6 @@ svg {
   text-underline-offset: 4px;
   padding: 10px 0;
 }
-.welcome-panel {
-  display: flex;
-  background: var(--hero);
-  border: 1px solid var(--line-soft);
-  border-radius: 9px;
-  min-height: 264px;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  margin-bottom: 41px;
-}
-.welcome-copy {
-  padding: 30px 34px;
-  max-width: 70%;
-  z-index: 1;
-}
-.welcome-copy .eyebrow {
-  color: var(--green);
-  font-size: 9px;
-}
-.welcome-copy h2 {
-  font-size: 29px;
-  margin: 12px 0 12px;
-  max-width: 440px;
-}
-.welcome-copy p {
-  font-size: 12px;
-  color: var(--muted);
-  max-width: 455px;
-  margin-bottom: 22px;
-  line-height: 1.8;
-}
-.notebook-visual {
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  margin-right: 22px;
-}
-.notebook-cover {
-  position: relative;
-  transform: rotate(-7deg);
-  width: 169px;
-  height: 214px;
-  background: #f9f5e9;
-  border: 1px solid #d0d1ba;
-  border-radius: 2px 8px 8px 2px;
-  box-shadow:
-    4px 5px 0 #d7d9c6,
-    7px 9px 15px #303b2720;
-  color: #4a5740;
-  padding: 21px 21px 17px 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.notebook-cover:before {
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 0;
-  bottom: 0;
-  border-left: 1px solid #c1c7ad;
-}
-.notebook-cover > div {
-  font-family: "Lora", serif;
-  font-size: 23px;
-  line-height: 1.35;
-  letter-spacing: -1px;
-}
-.notebook-cover em {
-  color: #a94e35;
-  font-size: 20px;
-}
-.notebook-cover > span {
-  font-size: 5.2px;
-  letter-spacing: 1.4px;
-}
-.notebook-tab {
-  position: absolute;
-  top: 42px;
-  right: 10px;
-  transform: rotate(7deg);
-  font-size: 6px;
-  letter-spacing: 1px;
-  background: #b16044;
-  color: #fff9ed;
-  padding: 9px 12px;
-  border-radius: 2px;
-}
-.note-pencil {
-  position: absolute;
-  width: 6px;
-  height: 155px;
-  background: #aa7c4c;
-  right: 12px;
-  top: 75px;
-  transform: rotate(13deg);
-  border-radius: 1px;
-}
-.note-pencil:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 12px solid #3f3e32;
-}
 .section-heading {
   display: flex;
   align-items: center;
@@ -629,60 +501,6 @@ svg {
 .section-heading.compact h2 {
   font-size: 21px;
 }
-.certification-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.cert-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 23px 25px 15px;
-  transition:
-    border-color 0.15s,
-    box-shadow 0.15s;
-}
-.cert-card:hover {
-  border-color: var(--muted);
-  box-shadow: 0 3px 12px #26282006;
-}
-.cert-card-top {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  margin-bottom: 20px;
-}
-.cert-icon {
-  width: 40px;
-  height: 40px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 7px;
-}
-.cert-tone-1 .cert-icon {
-  background: var(--green-soft);
-  color: var(--green);
-}
-.cert-tone-2 .cert-icon {
-  background: #eaf0f5;
-  color: #50647b;
-}
-.cert-tone-3 .cert-icon {
-  background: #f0ebf4;
-  color: #766084;
-}
-:root[data-theme="dark"] .cert-tone-2 .cert-icon {
-  background: #303c48;
-  color: #bdd1e3;
-}
-:root[data-theme="dark"] .cert-tone-3 .cert-icon {
-  background: #403547;
-  color: #c5adcf;
-}
 .cert-code {
   font-size: 10px;
   letter-spacing: 1px;
@@ -701,61 +519,6 @@ svg {
   color: var(--muted);
   max-width: 100%;
 }
-.cert-card-top .badge {
-  margin-left: auto;
-}
-.cert-title-prefix {
-  font-size: 11px;
-  color: var(--muted);
-}
-.cert-title h3 {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  letter-spacing: -0.7px;
-  margin-top: 3px;
-}
-.cert-title h3 svg {
-  color: var(--muted);
-}
-.cert-title:hover h3 {
-  color: var(--accent);
-}
-.cert-description {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.7;
-  margin: 11px 0 17px;
-  min-height: 41px;
-}
-.cert-counts {
-  display: flex;
-  gap: 19px;
-  margin-bottom: 23px;
-}
-.cert-counts > span {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  font-size: 10px;
-  color: var(--muted);
-}
-.card-progress-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 10px;
-  margin-bottom: 9px;
-}
-.card-progress-label > span {
-  color: var(--muted);
-}
-.card-progress-label strong {
-  font-size: 10px;
-}
 .progress-track {
   height: 4px;
   background: var(--line-soft);
@@ -768,42 +531,6 @@ svg {
   display: block;
   background: var(--green);
   border-radius: 3px;
-}
-.card-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 19px 0 15px;
-  border-bottom: 1px solid var(--line-soft);
-  gap: 12px;
-}
-.card-bottom > span {
-  font-size: 10px;
-  color: var(--muted);
-}
-.card-bottom small {
-  display: block;
-  font-size: 8px;
-  margin-top: 3px;
-}
-.card-action {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  font-size: 11px;
-  color: var(--accent);
-  font-weight: 500;
-  padding: 5px 0;
-}
-.card-action:hover {
-  gap: 17px;
-}
-.coverage-note {
-  font-size: 8px;
-  color: var(--muted);
-  display: block;
-  margin-top: 12px;
-  letter-spacing: 0.1px;
 }
 .learning-loop {
   margin-top: 43px;
@@ -975,7 +702,7 @@ svg {
 .path-summary strong {
   font-size: 28px;
   font-weight: 400;
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   letter-spacing: -1px;
 }
 .path-summary strong span {
@@ -1172,7 +899,7 @@ svg {
   border-bottom: 1px solid var(--line);
 }
 .study-module-index {
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-size: 26px;
   color: var(--muted);
   padding-top: 19px;
@@ -1308,7 +1035,7 @@ svg {
   color: var(--accent);
 }
 .margin-note {
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-style: italic;
   font-size: 13px;
   line-height: 1.8;
@@ -1802,7 +1529,7 @@ label select {
   margin-bottom: 15px;
 }
 .question-stem {
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   letter-spacing: -0.35px;
   font-size: 21px;
   line-height: 1.6;
@@ -2059,7 +1786,7 @@ label select {
 }
 .score-block > strong {
   display: block;
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-size: 64px;
   font-weight: 400;
   letter-spacing: -3px;
@@ -2120,7 +1847,7 @@ label select {
   padding: 24px 0;
 }
 .recommendation-number {
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-size: 24px;
   color: var(--accent);
   padding-top: 2px;
@@ -2350,7 +2077,7 @@ tbody th {
 }
 .progress-stat-grid strong {
   font-size: 35px;
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-weight: 400;
   display: block;
   letter-spacing: -1px;
@@ -2382,7 +2109,7 @@ tbody th {
   justify-content: center;
 }
 .empty-state h3 {
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-weight: 400;
   font-size: 25px;
   letter-spacing: -0.7px;
@@ -2563,7 +2290,7 @@ tbody th {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-family: "Lora", serif;
+  font-family: "STIX Two Text", serif;
   font-size: 25px;
   color: var(--muted);
 }
@@ -2600,28 +2327,6 @@ tbody th {
   .page {
     padding-top: 55px;
   }
-  .welcome-panel {
-    min-height: 285px;
-  }
-  .cert-card {
-    padding: 26px 28px 17px;
-  }
-  .cert-description {
-    min-height: 44px;
-  }
-  .cert-title h3 {
-    font-size: 28px;
-  }
-  .notebook-cover {
-    width: 180px;
-    height: 227px;
-  }
-  .notebook-cover > div {
-    font-size: 26px;
-  }
-  .notebook-cover em {
-    font-size: 22px;
-  }
 }
 @media (max-width: 1200px) {
   .sidebar {
@@ -2637,9 +2342,6 @@ tbody th {
   }
   .topbar {
     padding: 0 28px;
-  }
-  .free-note {
-    display: none;
   }
   .dashboard-layout {
     grid-template-columns: minmax(0, 1fr) 255px;
@@ -2693,39 +2395,6 @@ tbody th {
   .settings-section {
     gap: 30px;
   }
-  .welcome-copy {
-    padding: 29px;
-    max-width: 68%;
-  }
-  .notebook-visual {
-    min-width: 170px;
-    margin-right: 16px;
-  }
-  .notebook-cover {
-    width: 145px;
-    height: 193px;
-    padding: 18px 17px 16px 24px;
-  }
-  .notebook-cover > div {
-    font-size: 21px;
-  }
-  .notebook-cover em {
-    font-size: 17px;
-  }
-  .notebook-cover > span {
-    font-size: 4px;
-    letter-spacing: 1.1px;
-  }
-  .note-pencil {
-    right: 0;
-    height: 140px;
-  }
-  .notebook-tab {
-    right: -4px;
-  }
-  .card-progress-label {
-    font-size: 9px;
-  }
 }
 @media (max-width: 1000px) {
   .workspace-name > span:last-child {
@@ -2737,37 +2406,8 @@ tbody th {
   .page {
     padding: 33px 25px 40px;
   }
-  .certification-grid {
-    gap: 15px;
-  }
-  .cert-card {
-    padding: 20px 19px 14px;
-  }
-  .cert-title h3 {
-    font-size: 24px;
-  }
   .cert-code {
     font-size: 8px;
-  }
-  .cert-card-top {
-    gap: 8px;
-  }
-  .cert-card-top .badge {
-    font-size: 8px;
-    padding: 3px 5px;
-  }
-  .cert-description {
-    font-size: 11px;
-    min-height: 55px;
-  }
-  .cert-counts {
-    gap: 12px;
-  }
-  .cert-counts > span {
-    font-size: 9px;
-  }
-  .cert-title-prefix {
-    font-size: 10px;
   }
   .dashboard-layout {
     grid-template-columns: 1fr;
@@ -2893,37 +2533,6 @@ tbody th {
   .section-heading .small-label {
     display: none;
   }
-  .welcome-copy {
-    max-width: 65%;
-    padding: 25px;
-  }
-  .welcome-copy h2 {
-    font-size: 26px;
-  }
-  .notebook-visual {
-    min-width: 140px;
-  }
-  .notebook-cover {
-    width: 124px;
-    height: 180px;
-    padding-left: 20px;
-  }
-  .notebook-cover > div {
-    font-size: 19px;
-  }
-  .notebook-cover em {
-    font-size: 15px;
-  }
-  .notebook-cover > span {
-    font-size: 3.5px;
-  }
-  .note-pencil {
-    right: -8px;
-  }
-  .notebook-tab {
-    right: -12px;
-    font-size: 5px;
-  }
 }
 @media (max-width: 760px) {
   .sidebar {
@@ -2993,79 +2602,11 @@ tbody th {
     letter-spacing: 1.5px;
     margin-bottom: 10px;
   }
-  .welcome-panel {
-    min-height: 245px;
-    margin-bottom: 32px;
-  }
-  .welcome-copy {
-    max-width: 68%;
-    padding: 25px;
-  }
-  .welcome-copy h2 {
-    font-size: 25px;
-  }
-  .welcome-copy p {
-    font-size: 11px;
-    line-height: 1.8;
-  }
-  .welcome-copy .button {
-    font-size: 10px;
-    padding: 10px 12px;
-    gap: 6px;
-  }
-  .notebook-visual {
-    min-width: 140px;
-    margin-right: 18px;
-  }
-  .notebook-cover {
-    width: 127px;
-    height: 179px;
-    padding: 18px 17px 15px 23px;
-  }
-  .notebook-cover > div {
-    font-size: 19px;
-  }
-  .notebook-cover em {
-    font-size: 15px;
-  }
-  .notebook-tab {
-    top: 34px;
-  }
-  .note-pencil {
-    top: 67px;
-    height: 125px;
-    right: -4px;
-  }
   .section-heading h2 {
     font-size: 23px;
   }
-  .cert-description {
-    min-height: 38px;
-  }
-  .cert-card-top .badge {
-    font-size: 8px;
-  }
-  .certification-grid {
-    gap: 15px;
-  }
-  .cert-card-top {
-    margin-bottom: 15px;
-  }
-  .cert-title h3 {
-    font-size: 25px;
-  }
-  .cert-card {
-    padding: 20px 21px 14px;
-  }
   .cert-code {
     font-size: 9px;
-  }
-  .cert-icon {
-    width: 35px;
-    height: 35px;
-  }
-  .cert-icon svg {
-    width: 21px;
   }
   .learning-loop {
     margin-top: 30px;
@@ -3268,83 +2809,8 @@ tbody th {
   .page-heading h1 {
     font-size: 32px;
   }
-  .welcome-panel {
-    min-height: 0;
-    align-items: stretch;
-  }
-  .welcome-copy {
-    max-width: 100%;
-    padding: 24px 22px;
-  }
-  .welcome-copy h2 {
-    font-size: 27px;
-    max-width: 270px;
-  }
-  .welcome-copy p {
-    max-width: 95%;
-    font-size: 12px;
-  }
-  .notebook-visual {
-    display: none;
-  }
-  .welcome-copy .button {
-    font-size: 11px;
-    min-height: 40px;
-    padding: 10px 14px;
-  }
-  .welcome-panel .eyebrow {
-    font-size: 8px;
-  }
-  .certification-grid {
-    grid-template-columns: 1fr;
-    gap: 17px;
-  }
-  .cert-card {
-    padding: 23px 24px 16px;
-  }
-  .cert-card-top {
-    margin-bottom: 19px;
-  }
-  .cert-icon {
-    width: 39px;
-    height: 39px;
-  }
   .cert-code {
     font-size: 10px;
-  }
-  .cert-card-top .badge {
-    font-size: 9px;
-  }
-  .cert-title h3 {
-    font-size: 29px;
-  }
-  .cert-title-prefix {
-    font-size: 11px;
-  }
-  .cert-description {
-    font-size: 12px;
-    min-height: 0;
-    margin-top: 12px;
-  }
-  .cert-counts {
-    margin-top: 18px;
-    margin-bottom: 22px;
-    gap: 20px;
-  }
-  .cert-counts > span {
-    font-size: 10px;
-  }
-  .card-progress-label {
-    font-size: 10px;
-  }
-  .card-bottom {
-    padding: 18px 0 14px;
-  }
-  .card-action {
-    font-size: 11px;
-  }
-  .coverage-note {
-    font-size: 8px;
   }
   .section-heading {
     gap: 12px;

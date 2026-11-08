@@ -117,10 +117,10 @@ export default function Settings() {
               }
             >
               <option value="light">
-                {t("Light · warm paper", "Chiaro · carta calda")}
+                {t("Light · atlas paper", "Chiaro · carta d’atlante")}
               </option>
               <option value="dark">
-                {t("Dark · quiet charcoal", "Scuro · antracite")}
+                {t("Dark · blue ink", "Scuro · inchiostro blu")}
               </option>
             </select>
           </label>

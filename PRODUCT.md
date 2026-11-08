@@ -13,7 +13,7 @@ No login, backend, AI API, or required paid service. Progress stays in localStor
 ## Capabilities and Constraints
 Four independent certification paths. Source official facts; mark unavailable blueprints unverified. Prefer substantive starter content over inflated banks. Full exams in English. Exact question-to-module mapping closes Study → Practice → Exam → Review → Retest.
 ## Brand Commitments
-User approved a quiet editorial workspace, warm neutrals, terracotta accents, and persistent sidebar. Restrained, readable, accessible light and dark themes.
+User selected a study atlas: light paper, ultramarine ink, and cartographic rules, with the editorial spaciousness of Anthropic as a reference. Fieldnotes has its own mark and identity. Keep the persistent navigation and accessible light and dark themes.
 ## Evidence on Hand
 Detailed user brief. Official Partner Academy pages block direct retrieval; public FAQ is accessible. Never invent certification blueprints or claim authentic exam questions.
 ## Product Principles

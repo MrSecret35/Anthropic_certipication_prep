@@ -32,7 +32,7 @@ Apri l’indirizzo **Local** stampato da Vite. L’app parte in inglese: usa **E
 
 ## Come usarlo
 
-1. **Studia.** Scegli una certificazione. Ogni modulo ha una lettura rapida, un approfondimento, termini chiave, esempi e riferimenti. Segna il modulo come completato quando hai finito: aprirlo non conta come apprendimento.
+1. **Studia.** Scegli una certificazione dall’indice. Nella home puoi selezionare uno dei sette punti della mappa Associate per vedere il peso del dominio nell’esame e aprire la lezione. Ogni modulo include una lettura rapida, un approfondimento, termini chiave, esempi e riferimenti. Segna il modulo come completato quando hai finito.
 2. **Fai pratica.** Filtra per dominio, modulo, difficoltà o domande mai viste, errate o saltate. Dopo la verifica, vedi il perché di ogni alternativa e puoi tornare alla lezione collegata.
 3. **Simula.** Apri **Simulatore → Associate — Foundations → Esame completo**. Il riepilogo mostra durata, lingua e distribuzione dei quesiti prima di iniziare.
 4. **Ripassa.** Dopo la consegna trovi il riepilogo per dominio, modulo e difficoltà, le risposte spiegate e un piano di ripasso basato sugli errori. Puoi passare alla traduzione italiana dei quesiti e rifare solo quelli sbagliati.
