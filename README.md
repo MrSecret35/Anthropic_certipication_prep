@@ -1,17 +1,17 @@
-# Fieldnotes — Preparazione alle certificazioni Claude
+# Fieldnotes — Claude Certification Prep
 
-[![Verifica e deploy](https://github.com/MrSecret35/Anthropic_certipication_prep/actions/workflows/deploy.yml/badge.svg)](https://github.com/MrSecret35/Anthropic_certipication_prep/actions/workflows/deploy.yml)
-[![Licenza MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build and deploy](https://github.com/MrSecret35/Anthropic_certipication_prep/actions/workflows/deploy.yml/badge.svg)](https://github.com/MrSecret35/Anthropic_certipication_prep/actions/workflows/deploy.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Fieldnotes è un’app indipendente per studiare, esercitarsi e simulare l’esame **Claude Certified Associate – Foundations (CCAO-F)**. Offre lezioni in italiano e inglese, **124 domande originali bilingui** e una **simulazione completa da 60 quesiti in 120 minuti** per Associate. È un sito statico: non servono account, API key, backend o servizi a pagamento.
+Fieldnotes is an independent study app for Claude certifications. It offers lessons in English and Italian, **124 original bilingual questions**, and a **60-question, 120-minute mock exam** for **Claude Certified Associate — Foundations (CCAO-F)**. The app runs as a free static site and requires no account, API key, or backend.
 
-**[Apri Fieldnotes online](https://mrsecret35.github.io/Anthropic_certipication_prep/) · [Vai alla simulazione Associate](https://mrsecret35.github.io/Anthropic_certipication_prep/#/exam?cert=associate-foundations)**
+**[Open Fieldnotes](https://mrsecret35.github.io/Anthropic_certipication_prep/) · [Go to the Associate mock exam](https://mrsecret35.github.io/Anthropic_certipication_prep/#/exam?cert=associate-foundations)**
 
-> **Progetto indipendente, non ufficiale.** Non è affiliato ad Anthropic né da essa approvato. I quesiti sono originali, non riproducono domande riservate o reali d’esame. Il punteggio di Fieldnotes non equivale al punteggio scalato ufficiale e non predice il superamento dell’esame.
+> **Independent study project.** Fieldnotes has no affiliation with or endorsement from Anthropic. The question bank contains original practice items. Fieldnotes reports raw scores for study feedback. Anthropic uses its own scoring scale.
 
-## Avvio rapido
+## Quick start
 
-Requisiti: Node.js **22.12 o successivo** e npm.
+Use Node.js **22.12 or later** and npm.
 
 ```bash
 git clone https://github.com/MrSecret35/Anthropic_certipication_prep.git
@@ -20,111 +20,107 @@ npm ci
 npm run dev
 ```
 
-Apri l’indirizzo **Local** stampato da Vite. L’app parte in inglese: usa **EN / IT** nella barra superiore per passare all’italiano. Il pulsante accanto cambia tema.
+Open the **Local** URL printed by Vite. The app starts in English. Use **EN / IT** in the top bar to switch languages and the adjacent button to change the theme.
 
-| Comando            | Scopo                                                                |
+| Command            | Purpose                                                              |
 | ------------------ | -------------------------------------------------------------------- |
-| `npm run dev`      | Avvia il server di sviluppo con aggiornamento automatico             |
-| `npm run validate` | Controlla traduzioni, risposte, riferimenti e collegamenti ai moduli |
-| `npm test`         | Esegue i test del motore, della simulazione e del salvataggio        |
-| `npm run build`    | Verifica TypeScript e genera il sito statico in `dist/`              |
-| `npm run preview`  | Serve in locale l’ultima build di produzione                         |
+| `npm run dev`      | Starts the development server with live reload                       |
+| `npm run validate` | Checks translations, answers, references, and links to study modules |
+| `npm test`         | Tests the exam engine, simulation, and progress storage              |
+| `npm run build`    | Checks TypeScript and builds the static site in `dist/`              |
+| `npm run preview`  | Serves the latest production build locally                           |
 
-## Come usarlo
+## How to study
 
-1. **Studia.** Scegli una certificazione dall’indice. Nella home puoi selezionare uno dei sette punti della mappa Associate per vedere il peso del dominio nell’esame e aprire la lezione. Ogni modulo include una lettura rapida, un approfondimento, termini chiave, esempi e riferimenti. Segna il modulo come completato quando hai finito.
-2. **Fai pratica.** Filtra per dominio, modulo, difficoltà o domande mai viste, errate o saltate. Dopo la verifica, vedi il perché di ogni alternativa e puoi tornare alla lezione collegata.
-3. **Simula.** Apri **Simulatore → Associate — Foundations → Esame completo**. Il riepilogo mostra durata, lingua e distribuzione dei quesiti prima di iniziare.
-4. **Ripassa.** Dopo la consegna trovi il riepilogo per dominio, modulo e difficoltà, le risposte spiegate e un piano di ripasso basato sugli errori. Puoi passare alla traduzione italiana dei quesiti e rifare solo quelli sbagliati.
+1. **Study.** Choose a certification from the index. On the home page, select any of the seven points on the Associate chart to see the domain’s exam weight and open its lesson. Each module has a quick read, a deep dive, key terms, examples, and references. Mark the module complete when you finish.
+2. **Practice.** Filter by domain, module, difficulty, or questions you haven’t seen, answered incorrectly, or skipped. After checking an answer, read the explanation for each option and revisit the linked lesson.
+3. **Take a mock exam.** Open **Exam Simulator → Associate — Foundations → Full Exam**. The setup screen shows the time limit, question language, and distribution across domains.
+4. **Review.** After submitting, see your results by domain, module, and difficulty, along with answer explanations and a study plan based on your mistakes. You can switch to the Italian translation of the questions and retry the ones you missed.
 
-### Simulazione completa Associate
+### Full Associate mock exam
 
-![Schermata di avvio della simulazione Associate: 60 domande, 120 minuti e quote per dominio](docs/simulazione-associate.jpg)
+![Associate Full Exam setup showing 60 questions, a 120-minute time limit, and question counts by domain](docs/associate-mock-exam.jpg)
 
-La prova sceglie **60 domande distinte** da un pool di **74 quesiti a scenario** dedicati alla simulazione. Sono incluse risposte singole e multiple; i quesiti d’esame sono in inglese. La distribuzione applica il metodo dei maggiori resti ai pesi del blueprint:
+The simulator draws **60 distinct questions** from a pool of **74 scenario-based items** eligible for the full exam. Questions are in English and include both single- and multiple-response formats. The largest remainder method converts the blueprint weights into whole question counts.
 
-| Dominio CCAO-F                             | Peso del blueprint | Quesiti nella prova |
-| ------------------------------------------ | -----------------: | ------------------: |
-| Prompting ed esecuzione delle attività     |                14% |                   8 |
-| Valutazione e verifica degli output        |                21% |                  13 |
-| Scelta del prodotto e del modello          |                12% |                   7 |
-| Integrazione nei processi e progettazione  |                16% |                  10 |
-| Configurazione e gestione della conoscenza |                12% |                   7 |
-| Governance, rischi e uso responsabile      |                15% |                   9 |
-| Diagnosi e ottimizzazione                  |                10% |                   6 |
-| **Totale**                                 |           **100%** |              **60** |
+| CCAO-F domain                            | Blueprint weight | Questions per exam |
+| ---------------------------------------- | ---------------: | -----------------: |
+| Prompting and Task Execution             |              14% |                  8 |
+| Output Evaluation and Validation         |              21% |                 13 |
+| Product and Model Selection              |              12% |                  7 |
+| Workflow Integration and Solution Design |              16% |                 10 |
+| Configuration and Knowledge Management   |              12% |                  7 |
+| Governance, Risk, and Responsible Use    |              15% |                  9 |
+| Troubleshooting and Optimization         |              10% |                  6 |
+| **Total**                                |         **100%** |             **60** |
 
-- **Timer reale di 120 minuti.** Parte all’avvio e non si mette in pausa. La scadenza, l’ordine delle domande e delle opzioni, le risposte e le segnalazioni restano salvati al refresh. Se chiudi la scheda, il timer continua; alla riapertura un tentativo scaduto viene consegnato automaticamente.
-- **Schermata dedicata.** Mappa delle domande, filtri per quelle da completare o segnalate, navigazione libera, modifica e cancellazione della risposta. La consegna anticipata mostra un riepilogo prima di chiedere conferma. La modalità termina con la consegna o allo scadere del tempo.
-- **Feedback dopo la consegna.** Le risposte multiple valgono un punto solo se selezioni esattamente tutte le alternative corrette. Una risposta incompleta o assente vale zero. Il risultato è grezzo: corrette diviso 60. Non c’è una soglia ufficiale di promozione nell’app.
-- **Varianti, non 74 prove diverse.** I tentativi privilegiano quesiti mai visti o visti meno spesso, poi mescolano domande e opzioni. Con il pool attuale due prove complete condividono necessariamente almeno 46 quesiti. Per stimare la preparazione, dai più peso al primo tentativo e agli errori su scenari nuovi.
+- **120-minute countdown.** The timer starts when you begin and keeps running if you refresh or close the tab. The deadline, question and option order, answers, and review flags are saved. Reopening an expired attempt submits it automatically.
+- **Dedicated exam view.** Use the question map to jump between questions or filter for unanswered and flagged items. You can change or clear answers until you submit or time runs out. If you submit early, a summary appears before confirmation.
+- **Feedback after submission.** A multiple-response question earns one point only if you select every correct option and no incorrect options. Incomplete and unanswered questions earn zero. The raw score is the number correct out of 60. The app does not apply an official passing threshold.
+- **Question overlap between attempts.** The simulator prioritizes questions you have seen least often, then shuffles questions and options. With the current pool, any two full attempts share at least 46 questions. Give more weight to your first attempt and to mistakes on scenarios you haven’t seen before.
 
-Il simulatore replica durata, lunghezza e distribuzione del blueprint; è uno strumento di studio, non una prova sorvegliata o calibrata da Anthropic. Per una sessione più breve scegli **Esame personalizzato**: 10, 20, 30 o 60 domande richieste, filtri e timer opzionale. Se la banca filtrata è più piccola, l’app indica la lunghezza effettiva prima dell’avvio.
+The mock is a self-administered study tool that follows the blueprint’s length, time limit, and domain weights. In **Custom Exam**, you can request 10, 20, 30, or 60 questions, apply filters, and optionally set a timer. If fewer questions match, the app shows the actual count before you start.
 
-## Copertura dei percorsi
+## Certification coverage
 
-| Percorso                          | Moduli | Domande EN/IT | Esame nell’app                     | Riferimento ufficiale                  |
-| --------------------------------- | -----: | ------------: | ---------------------------------- | -------------------------------------- |
-| Associate — Foundations (CCAO-F)  |      7 |            97 | Completo e personalizzato          | 60 quesiti, 120 min                    |
-| Developer — Foundations (CCDV-F)  |      1 |             9 | Personalizzato, contenuti iniziali | 53 quesiti, 120 min                    |
-| Architect — Foundations (CCAR-F)  |      1 |             9 | Personalizzato, contenuti iniziali | 60 quesiti, 120 min, scenari collegati |
-| Architect — Professional (CCAR-P) |      1 |             9 | Personalizzato, contenuti iniziali | 63 quesiti, 120 min                    |
+| Track                             | Modules | EN/IT questions | In-app exam modes                 | Official exam format                  |
+| --------------------------------- | ------: | --------------: | --------------------------------- | ------------------------------------- |
+| Associate — Foundations (CCAO-F)  |       7 |              97 | Full and custom exams             | 60 questions, 120 min                 |
+| Developer — Foundations (CCDV-F)  |       1 |               9 | Custom exam with starter content  | 53 questions, 120 min                 |
+| Architect — Foundations (CCAR-F)  |       1 |               9 | Custom exam with starter content  | 60 questions, 120 min, linked cases   |
+| Architect — Professional (CCAR-P) |       1 |               9 | Custom exam with starter content  | 63 questions, 120 min                 |
 
-I blueprint derivano dalle guide Anthropic, **v1.0, luglio 2026**, verificate l’**8 novembre 2026**. I link alle guide sono nelle singole schede di certificazione e in [`content/certifications.ts`](content/certifications.ts). Controlla il [Partner Academy](https://anthropic-partners.skilljar.com/page/partner-certifications) per eventuali aggiornamenti prima di prenotare un esame. Le spiegazioni rimandano a fonti primarie; i PDF ufficiali non sono redistribuiti qui.
+The blueprints use Anthropic’s **v1.0 guides from July 2026**, verified on **November 8, 2026**. Each certification page links to its guide, as does [`content/certifications.ts`](content/certifications.ts). Explanations cite primary sources, and the official PDFs are hosted by the publisher. Check for updates before booking an exam. [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/page/partner-certifications)
 
-Associate copre tutti i domini con lezioni introduttive e laboratori guidati. Gli altri tre percorsi coprono per ora un modulo ciascuno: rispettivamente ciclo degli strumenti, orchestrazione e RAG. Per questi tre percorsi le prove complete restano disabilitate finché mancano quesiti idonei per ciascun dominio. Per Architect Foundations mancano anche i gruppi di domande collegati a uno stesso scenario.
+Associate covers all seven domains with introductory lessons and guided exercises. The other tracks each cover one topic so far. Developer Foundations covers the tool-use loop, Architect Foundations covers orchestration, and Architect Professional covers retrieval-augmented generation (RAG). Full exams for these tracks need eligible questions across all domains. Architect Foundations also needs groups of questions that share a case study.
 
-## Progressi e privacy
+## Progress and privacy
 
-Preferenze, moduli completati, tentativi e prova in corso sono salvati **in questo browser** con la chiave `fieldnotes-progress-v1`. I contenuti, i font e il codice sono serviti con il sito; non vengono inviati prompt, risposte o analytics a terzi. I link alle fonti aprono siti esterni solo quando li selezioni.
+Fieldnotes saves your preferences, completed modules, past attempts, and active exam **in your browser** under the `fieldnotes-progress-v1` key. The site serves its own content, fonts, and code and sends no prompts, answers, or analytics to third parties. Source links open external sites when you select them.
 
-Da **Impostazioni** puoi esportare un backup JSON, importarlo dopo averne controllato il riepilogo o azzerare i dati con conferma. Origini diverse, per esempio `localhost` e GitHub Pages, hanno archivi separati: usa l’export per spostarti. Conserva al massimo 500 sessioni completate; usa una sola scheda per evitare sovrascritture concorrenti. I dati locali sono modificabili da chi controlla il browser: il simulatore non è un sistema di certificazione.
+In **Settings**, you can export a JSON backup, preview a backup before importing it, or confirm a reset. Browser storage is separate for each origin, such as `localhost` and GitHub Pages. Export a backup to transfer progress. Fieldnotes retains up to 500 completed sessions. Use a single tab to avoid overwriting concurrent changes. Anyone with access to your browser can modify local data.
 
-I consigli di ripasso considerano fino a cinque sessioni recenti, difficoltà, peso del dominio ed errori. Mostrano la dimensione del campione; vedere la stessa domanda più volte non dà la stessa evidenza di domande diverse. L’indicatore di preparazione è un suggerimento locale, non una probabilità di superamento.
+Review recommendations weigh mistakes, difficulty, and domain importance across up to five recent sessions. The app shows how many questions inform the recommendation. Repeated attempts on the same question give less information than attempts on distinct questions. The readiness indicator is for planning your study.
 
-## Struttura del progetto
+## Project structure
 
 ```text
 content/
-  certifications.ts        Blueprint, durate, domini e guide
-  modules.json             Lezioni e obiettivi EN/IT
-  questions.json           Banca introduttiva
-  questions-scenarios.json Quesiti a scenario ed eleggibilità per la prova
+  certifications.ts        Exam blueprints, time limits, domains, and guides
+  modules.json             Lessons and learning objectives in English and Italian
+  questions.json           Introductory question bank
+  questions-scenarios.json Scenario questions and full exam eligibility
 src/
-  components/              Layout e componenti accessibili
-  pages/                   Studio, pratica, simulatore, risultati e impostazioni
-  hooks/                   Stato dell’app e scadenza dei tentativi
-  lib/engine.ts            Selezione, timer, punteggi e raccomandazioni
-  lib/storage.ts           Import e persistenza locale
-  lib/validation.ts        Verifica del contenuto
-  types/                   Schemi TypeScript
+  components/              Layout and accessible components
+  pages/                   Study, practice, simulator, results, and settings
+  hooks/                   App state and exam deadlines
+  lib/engine.ts            Question selection, timing, scoring, and recommendations
+  lib/storage.ts           Import and local storage
+  lib/validation.ts        Content validation
+  types/                   TypeScript schemas
 scripts/validate-content.ts
 tests/engine.test.ts
 .github/workflows/deploy.yml
 ```
 
-React, TypeScript e Vite generano il sito statico. Le rotte vengono caricate quando servono; la banca a scenario ha un asset separato, riutilizzabile dalla cache. Il tentativo salva lo snapshot degli ID e delle opzioni: ricaricare la pagina non rigenera la prova.
+React, TypeScript, and Vite build the static site. Routes load on demand, and the scenario bank is cached as a separate asset. Each attempt stores its question IDs and option order so refreshing keeps the same exam.
 
-## Pubblicazione su GitHub Pages
+## Deploy to GitHub Pages
 
-Il workflow [Verifica e deploy](.github/workflows/deploy.yml) esegue `npm ci`, validazione, test e build. Le pull request eseguono le verifiche; i push a `main` e gli avvii manuali preparano e pubblicano `dist/`.
+The [Validate and deploy GitHub Pages workflow](.github/workflows/deploy.yml) runs `npm ci`, content validation, tests, and the production build. Pull requests run the checks. Pushes to `main` and manual workflow runs build and publish `dist/`.
 
-Per pubblicare un fork:
+To publish a fork, follow these steps.
 
-1. Nel repository, apri **Settings → Pages → Build and deployment** e seleziona **GitHub Actions** come sorgente.
-2. In **Actions**, esegui **Validate and deploy GitHub Pages** (o fai un push a `main`).
-3. Apri l’URL del job **deploy** quando termina. Se il deploy fallisce, controlla prima che Pages sia abilitato e che l’ambiente `github-pages` permetta il deploy dal ramo `main`.
+1. In your repository, open **Settings → Pages → Build and deployment** and select **GitHub Actions** as the source.
+2. In **Actions**, run **Validate and deploy GitHub Pages** or push to `main`.
+3. Open the URL from the completed **deploy** job. If deployment fails, check that Pages is enabled and the `github-pages` environment allows deployments from `main`.
 
-Vite usa percorsi relativi (`base: './'`) e React Router usa rotte hash; il sito funziona sotto il percorso del repository e il refresh delle pagine interne non richiede regole lato server.
+Vite uses relative paths (`base: './'`) and React Router uses hash routes. This lets the app run under a repository path and reload on any route without server-side rewrites.
 
-## Contribuire
+## Contributing
 
-Leggi [CONTRIBUTING.md](CONTRIBUTING.md) e [CONTENT_GUIDELINES.md](CONTENT_GUIDELINES.md). Conserva gli ID delle domande e dei moduli già pubblicati, per non perdere lo storico. Una nuova domanda deve avere testo e spiegazioni in entrambe le lingue, riferimenti verificabili e collegamenti agli obiettivi. Per includerla in una prova completa usa `fullExam: true` solo dopo il controllo editoriale indicato nelle linee guida.
+See the [contribution guide](CONTRIBUTING.md) and [content guidelines](CONTENT_GUIDELINES.md). Keep existing question and module IDs to preserve study history. New questions need prompts and explanations in both languages, verifiable references, and links to learning objectives. Set `fullExam: true` only after completing the editorial review described in the guidelines.
 
-Le prossime priorità sono una revisione indipendente dei quesiti Associate, una banca più ampia per ridurre le ripetizioni, e copertura per tutti i domini Developer e Architect. I casi di studio collegati di Architect Foundations richiedono sia nuovi contenuti sia supporto nel motore.
+Current priorities are an independent review of the Associate questions, a larger pool to reduce repetition, and full domain coverage for the Developer and Architect tracks. Linked case studies for Architect Foundations need both new content and support in the exam engine.
 
-## English quick start
-
-Fieldnotes is an independent English/Italian Claude certification study app. Run `npm ci && npm run dev` with Node.js 22.12+. Open **Exam Simulator → Associate — Foundations → Full Exam** for a 60-question, 120-minute English mock. Explanations and optional Italian translations unlock after submission. The other three tracks have starter study and custom practice. Progress stays in your browser and can be backed up in **Settings**. Use `npm run validate && npm test && npm run build` before contributing.
-
-Codice e contenuti didattici originali: [licenza MIT](LICENSE). Font, documenti citati e marchi mantengono licenze e titolari rispettivi.
+The code and original study content are released under the [MIT License](LICENSE). Fonts, cited documents, and trademarks are subject to their respective licenses and ownership.
