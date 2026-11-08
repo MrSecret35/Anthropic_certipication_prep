@@ -1,0 +1,32 @@
+{
+  "name": "claude-certification-prep",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "validate": "node --import tsx scripts/validate-content.ts"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "^5.2.5",
+    "@fontsource/lora": "^5.2.6",
+    "@tailwindcss/vite": "^4.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^5.1.0"
+  }
+}

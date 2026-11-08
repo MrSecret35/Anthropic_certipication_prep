@@ -1,0 +1,2283 @@
+[
+  {
+    "id": "af-prompting-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A coordinator wants a useful handoff summary from supplied notes. Which instruction best makes quality checkable?",
+      "it": "Un coordinatore vuole un riepilogo per il passaggio di consegne. Quale istruzione rende verificabile la qualità?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "List decisions, owners, and due dates with note references; mark absent fields unknown.",
+          "it": "Elenca decisioni, responsabili e scadenze con riferimenti; segnala i campi mancanti."
+        },
+        "explanation": {
+          "en": "Explicit fields and evidence allow verification without invented details.",
+          "it": "Campi espliciti e fonti consentono verifiche senza invenzioni."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Act as the world’s best coordinator and make it impressive.",
+          "it": "Agisci come il miglior coordinatore e rendilo impressionante."
+        },
+        "explanation": {
+          "en": "A role and praise do not define acceptance criteria.",
+          "it": "Ruolo ed elogi non definiscono criteri di accettazione."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Make every action include a plausible deadline.",
+          "it": "Assegna a ogni azione una scadenza plausibile."
+        },
+        "explanation": {
+          "en": "Plausibility would encourage unsupported deadlines.",
+          "it": "La plausibilità favorisce scadenze senza prove."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Use the shortest possible response regardless of coverage.",
+          "it": "Usa la risposta più breve possibile a prescindere dalla copertura."
+        },
+        "explanation": {
+          "en": "Brevity alone can omit essential handoff details.",
+          "it": "La brevità può eliminare dettagli essenziali."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d1"],
+    "moduleIds": ["af-prompting"],
+    "objectiveIds": ["af-prompting-o1"],
+    "keywords": ["prompting"],
+    "explanation": {
+      "en": "Explicit fields and evidence allow verification without invented details.",
+      "it": "Campi espliciti e fonti consentono verifiche senza invenzioni."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-prompting-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A long report repeatedly omits source facts. Which redesign creates a useful quality checkpoint?",
+      "it": "Un report lungo omette ripetutamente fatti. Quale modifica crea un controllo utile?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Extract facts with source IDs, inspect them, then draft from the checked extraction.",
+          "it": "Estrai fatti con ID delle fonti, verificali e poi prepara la bozza."
+        },
+        "explanation": {
+          "en": "A checkable intermediate artifact localizes omissions before drafting.",
+          "it": "Un risultato intermedio verificabile localizza le omissioni prima della bozza."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Ask for more confident prose in one uninterrupted response.",
+          "it": "Richiedi prosa più sicura in una risposta unica."
+        },
+        "explanation": {
+          "en": "Confidence does not recover missing evidence.",
+          "it": "La sicurezza non recupera prove mancanti."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Remove source identifiers to reduce clutter.",
+          "it": "Elimina gli identificativi per ridurre il disordine."
+        },
+        "explanation": {
+          "en": "Removing IDs weakens traceability.",
+          "it": "Eliminare ID riduce la tracciabilità."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Repeat “do not omit anything” ten times.",
+          "it": "Ripeti dieci volte “non omettere nulla”."
+        },
+        "explanation": {
+          "en": "Repetition does not create an observable verification step.",
+          "it": "La ripetizione non crea una verifica osservabile."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d1"],
+    "moduleIds": ["af-prompting"],
+    "objectiveIds": ["af-prompting-o2"],
+    "keywords": ["prompting"],
+    "explanation": {
+      "en": "A checkable intermediate artifact localizes omissions before drafting.",
+      "it": "Un risultato intermedio verificabile localizza le omissioni prima della bozza."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-prompting-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "A prompt classifies feedback inconsistently at category boundaries. Which TWO changes are most useful?",
+      "it": "Un prompt classifica in modo incoerente i casi al confine tra categorie. Quali DUE modifiche aiutano?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Provide representative labeled examples, including ambiguous cases.",
+          "it": "Fornisci esempi etichettati, inclusi casi ambigui."
+        },
+        "explanation": {
+          "en": "Examples clarify how category boundaries should be applied.",
+          "it": "Gli esempi chiariscono i confini delle categorie."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Define the category rules and how to handle mixed feedback.",
+          "it": "Definisci regole e gestione dei commenti misti."
+        },
+        "explanation": {
+          "en": "Explicit rules reduce ambiguity and allow evaluation.",
+          "it": "Regole esplicite riducono ambiguità e consentono verifiche."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Require a confident single label for every input.",
+          "it": "Imponi un’etichetta sicura per ogni input."
+        },
+        "explanation": {
+          "en": "Forced confidence hides ambiguity instead of resolving it.",
+          "it": "La sicurezza imposta nasconde l’ambiguità."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Change the formatting but keep category definitions implicit.",
+          "it": "Cambia formato lasciando implicite le definizioni."
+        },
+        "explanation": {
+          "en": "Formatting alone does not resolve semantic boundaries.",
+          "it": "Il formato non risolve confini semantici."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "medium",
+    "domainIds": ["af-d1"],
+    "moduleIds": ["af-prompting"],
+    "objectiveIds": ["af-prompting-o3"],
+    "keywords": ["prompting"],
+    "explanation": {
+      "en": "Examples clarify how category boundaries should be applied. Explicit rules reduce ambiguity and allow evaluation.",
+      "it": "Gli esempi chiariscono i confini delle categorie. Regole esplicite riducono ambiguità e consentono verifiche."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-prompting-q4",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A team tunes a prompt until it handles one difficult ticket perfectly. What is the strongest next validation?",
+      "it": "Un team ottimizza un prompt finché risolve un ticket difficile. Qual è la verifica successiva più solida?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Test held-out tickets and previous successful cases against the same rubric.",
+          "it": "Prova ticket nuovi e casi prima riusciti con gli stessi criteri."
+        },
+        "explanation": {
+          "en": "Held-out cases and regression checks test generalization.",
+          "it": "Casi nuovi e regressioni verificano la generalizzazione."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Publish because the hardest known case now works.",
+          "it": "Pubblica perché il caso noto più difficile funziona."
+        },
+        "explanation": {
+          "en": "One tuned example cannot establish reliability.",
+          "it": "Un solo caso ottimizzato non prova affidabilità."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Ask the model whether the prompt is now optimal.",
+          "it": "Chiedi al modello se il prompt è ottimale."
+        },
+        "explanation": {
+          "en": "Self-assessment is not independent validation.",
+          "it": "L’autovalutazione non è verifica indipendente."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Discard the earlier rubric to favor the revised answer.",
+          "it": "Elimina i vecchi criteri per favorire il nuovo risultato."
+        },
+        "explanation": {
+          "en": "Changing criteria after seeing results biases evaluation.",
+          "it": "Cambiare criteri dopo i risultati distorce la valutazione."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "hard",
+    "domainIds": ["af-d1"],
+    "moduleIds": ["af-prompting"],
+    "objectiveIds": ["af-prompting-o3"],
+    "keywords": ["prompting"],
+    "explanation": {
+      "en": "Held-out cases and regression checks test generalization.",
+      "it": "Casi nuovi e regressioni verificano la generalizzazione."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-evaluation-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A draft cites a survey to support a numerical claim. What is the best validation?",
+      "it": "Una bozza cita un sondaggio per un dato numerico. Come verificarlo?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Inspect the survey and confirm population, date, metric, and value support the claim.",
+          "it": "Controlla sondaggio, popolazione, data, metrica e valore."
+        },
+        "explanation": {
+          "en": "A source must support the exact claim within its scope.",
+          "it": "La fonte deve supportare l’affermazione nel suo ambito."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Trust the claim if the link has a professional-looking domain.",
+          "it": "Fidati se il dominio sembra professionale."
+        },
+        "explanation": {
+          "en": "Appearance does not prove source support.",
+          "it": "L’aspetto non prova il contenuto della fonte."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Ask Claude to repeat the statistic three times.",
+          "it": "Chiedi di ripetere il dato tre volte."
+        },
+        "explanation": {
+          "en": "Repeated generation adds no independent evidence.",
+          "it": "La ripetizione non aggiunge prove."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Remove the citation so readers focus on the conclusion.",
+          "it": "Elimina la citazione per concentrarsi sulla conclusione."
+        },
+        "explanation": {
+          "en": "Removing the citation reduces transparency.",
+          "it": "Rimuovere la citazione riduce trasparenza."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d2"],
+    "moduleIds": ["af-evaluation"],
+    "objectiveIds": ["af-evaluation-o1"],
+    "keywords": ["evaluation"],
+    "explanation": {
+      "en": "A source must support the exact claim within its scope.",
+      "it": "La fonte deve supportare l’affermazione nel suo ambito."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-evaluation-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A summary is grammatically excellent but excludes a contract exception that changes the recommendation. What failed?",
+      "it": "Un riepilogo perfetto nella grammatica omette un’eccezione contrattuale decisiva. Cosa è fallito?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Completeness and decision-relevant fidelity.",
+          "it": "Completezza e fedeltà rilevante per la decisione."
+        },
+        "explanation": {
+          "en": "Good style does not compensate for a material omission.",
+          "it": "Lo stile non compensa omissioni rilevanti."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Only visual formatting.",
+          "it": "Solo il formato visivo."
+        },
+        "explanation": {
+          "en": "The missing exception changes meaning, not just appearance.",
+          "it": "L’eccezione modifica il significato."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Nothing, because the remaining statements are true.",
+          "it": "Nulla, perché il resto è vero."
+        },
+        "explanation": {
+          "en": "True statements can still produce a misleading incomplete summary.",
+          "it": "Fatti veri possono creare un riepilogo incompleto fuorviante."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "The reviewer’s preference for shorter text.",
+          "it": "La preferenza del revisore per testi brevi."
+        },
+        "explanation": {
+          "en": "The defect is omission of a required condition.",
+          "it": "Il difetto è una condizione essenziale omessa."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d2"],
+    "moduleIds": ["af-evaluation"],
+    "objectiveIds": ["af-evaluation-o2"],
+    "keywords": ["evaluation"],
+    "explanation": {
+      "en": "Good style does not compensate for a material omission.",
+      "it": "Lo stile non compensa omissioni rilevanti."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-evaluation-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "Which TWO additions strengthen an evaluation set for a business-summary workflow?",
+      "it": "Quali DUE aggiunte rafforzano un insieme di valutazione per riepiloghi aziendali?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Cases with contradictory or missing source facts.",
+          "it": "Casi con fonti contraddittorie o mancanti."
+        },
+        "explanation": {
+          "en": "These reveal whether uncertainty and conflicts are handled correctly.",
+          "it": "Mostrano come vengono gestiti incertezza e conflitti."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "A rubric with separately scored factuality and completeness.",
+          "it": "Criteri separati per correttezza e completezza."
+        },
+        "explanation": {
+          "en": "Separate dimensions make defects diagnosable.",
+          "it": "Dimensioni separate rendono diagnosticabili i difetti."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Only examples previously used to tune the prompt.",
+          "it": "Solo esempi già usati per ottimizzare il prompt."
+        },
+        "explanation": {
+          "en": "This risks overestimating generalization.",
+          "it": "Rischia di sovrastimare la generalizzazione."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "A rule that a fluent answer automatically receives full credit.",
+          "it": "Una regola che assegna pieno punteggio ai testi scorrevoli."
+        },
+        "explanation": {
+          "en": "Fluency is not equivalent to accuracy.",
+          "it": "Scorrevolezza non equivale ad accuratezza."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "medium",
+    "domainIds": ["af-d2"],
+    "moduleIds": ["af-evaluation"],
+    "objectiveIds": ["af-evaluation-o3"],
+    "keywords": ["evaluation"],
+    "explanation": {
+      "en": "These reveal whether uncertainty and conflicts are handled correctly. Separate dimensions make defects diagnosable.",
+      "it": "Mostrano come vengono gestiti incertezza e conflitti. Dimensioni separate rendono diagnosticabili i difetti."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-evaluation-q4",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "An assistant is accurate overall but fails frequently on an uncommon high-impact document type. What should a reviewer do?",
+      "it": "Un assistente è accurato in media ma sbaglia spesso un tipo raro di documento ad alto impatto. Cosa fare?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Analyze that segment, retain appropriate human review, and address its specific failures.",
+          "it": "Analizza il segmento, mantieni revisione adeguata e correggi i difetti."
+        },
+        "explanation": {
+          "en": "Aggregate metrics can conceal consequential subgroup failures.",
+          "it": "Le medie possono nascondere errori rilevanti in sottogruppi."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Remove the rare documents from reporting to stabilize the average.",
+          "it": "Elimina i documenti rari dai report per stabilizzare la media."
+        },
+        "explanation": {
+          "en": "Hiding failures does not improve reliability.",
+          "it": "Nascondere errori non migliora affidabilità."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Automate all documents because the overall score is high.",
+          "it": "Automatizza tutto perché il punteggio medio è alto."
+        },
+        "explanation": {
+          "en": "Risk depends on segment performance and consequences.",
+          "it": "Il rischio dipende da segmento e conseguenze."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Ask for more professional language for that type.",
+          "it": "Chiedi linguaggio più professionale per quel tipo."
+        },
+        "explanation": {
+          "en": "Style does not address the measured failure mode.",
+          "it": "Lo stile non corregge il difetto misurato."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "hard",
+    "domainIds": ["af-d2"],
+    "moduleIds": ["af-evaluation"],
+    "objectiveIds": ["af-evaluation-o3"],
+    "keywords": ["evaluation"],
+    "explanation": {
+      "en": "Aggregate metrics can conceal consequential subgroup failures.",
+      "it": "Le medie possono nascondere errori rilevanti in sottogruppi."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-selection-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A team repeatedly drafts materials using the same approved references and guidance. Which feature is the most natural starting point?",
+      "it": "Un team prepara materiali ricorrenti con le stesse fonti e istruzioni. Da quale funzione partire?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "A Project with maintained knowledge and instructions.",
+          "it": "Un Project con fonti e istruzioni mantenute."
+        },
+        "explanation": {
+          "en": "Projects organize recurring work with reusable context.",
+          "it": "Projects organizza lavoro ricorrente con contesto riutilizzabile."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "A new empty conversation for every sentence.",
+          "it": "Una conversazione vuota per ogni frase."
+        },
+        "explanation": {
+          "en": "This discards useful reusable guidance.",
+          "it": "Si perdono indicazioni riutilizzabili."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "An Artifact as a replacement for source governance.",
+          "it": "Un Artifact al posto della gestione delle fonti."
+        },
+        "explanation": {
+          "en": "An output workspace does not maintain source authority.",
+          "it": "Uno spazio di output non governa le fonti."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "The most expensive model regardless of workflow.",
+          "it": "Il modello più costoso a prescindere dal processo."
+        },
+        "explanation": {
+          "en": "Model price does not solve organization and reuse.",
+          "it": "Il prezzo non risolve organizzazione e riuso."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d3"],
+    "moduleIds": ["af-selection"],
+    "objectiveIds": ["af-selection-o1"],
+    "keywords": ["selection"],
+    "explanation": {
+      "en": "Projects organize recurring work with reusable context.",
+      "it": "Projects organizza lavoro ricorrente con contesto riutilizzabile."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-selection-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "Two models meet a drafting quality rubric. One is faster, but requires twice as much correction. What should guide the choice?",
+      "it": "Due modelli soddisfano i criteri. Uno è più veloce ma richiede il doppio delle correzioni. Come scegliere?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Total workflow cost and time, including review and corrections.",
+          "it": "Costi e tempi totali, incluse revisione e correzioni."
+        },
+        "explanation": {
+          "en": "Generation is only one part of end-to-end effort.",
+          "it": "La generazione è solo parte dell’impegno totale."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Generation speed alone.",
+          "it": "Solo la velocità di generazione."
+        },
+        "explanation": {
+          "en": "This ignores the stated correction burden.",
+          "it": "Ignora il carico di correzione."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "The model’s own preference.",
+          "it": "La preferenza espressa dal modello."
+        },
+        "explanation": {
+          "en": "Preference is not task performance evidence.",
+          "it": "La preferenza non misura il risultato."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Always choose the model with the newest name.",
+          "it": "Scegli sempre il nome più nuovo."
+        },
+        "explanation": {
+          "en": "Novelty does not establish fit.",
+          "it": "La novità non prova adeguatezza."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d3"],
+    "moduleIds": ["af-selection"],
+    "objectiveIds": ["af-selection-o2"],
+    "keywords": ["selection"],
+    "explanation": {
+      "en": "Generation is only one part of end-to-end effort.",
+      "it": "La generazione è solo parte dell’impegno totale."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-selection-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "A long conversation begins losing exact order IDs. Which TWO actions best preserve reliable context?",
+      "it": "Una lunga conversazione perde gli ID esatti degli ordini. Quali DUE azioni aiutano?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Maintain a verified brief containing exact identifiers and unresolved issues.",
+          "it": "Mantieni un riepilogo verificato con ID esatti e dubbi aperti."
+        },
+        "explanation": {
+          "en": "Explicit factual state protects critical details.",
+          "it": "Uno stato esplicito protegge i dettagli critici."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Remove irrelevant history while preserving authoritative facts.",
+          "it": "Riduci cronologia irrilevante conservando fatti autorevoli."
+        },
+        "explanation": {
+          "en": "Relevant context reduces distraction without losing needed evidence.",
+          "it": "Il contesto pertinente riduce distrazioni preservando le prove."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Assume memory permanently stores every message verbatim.",
+          "it": "Presumi che la memoria conservi ogni messaggio."
+        },
+        "explanation": {
+          "en": "Availability is product-specific and not guaranteed.",
+          "it": "La disponibilità dipende dal prodotto e non è garantita."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Replace exact IDs with approximate descriptions.",
+          "it": "Sostituisci ID con descrizioni approssimative."
+        },
+        "explanation": {
+          "en": "Approximation loses identity needed for correct actions.",
+          "it": "L’approssimazione perde l’identità necessaria."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["af-d3"],
+    "moduleIds": ["af-selection"],
+    "objectiveIds": ["af-selection-o3"],
+    "keywords": ["selection"],
+    "explanation": {
+      "en": "Explicit factual state protects critical details. Relevant context reduces distraction without losing needed evidence.",
+      "it": "Uno stato esplicito protegge i dettagli critici. Il contesto pertinente riduce distrazioni preservando le prove."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-workflows-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "Before proposing Claude for a slow report process, what should an associate do first?",
+      "it": "Prima di proporre Claude per un processo lento di reportistica, cosa fare?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Map steps, input problems, decision points, and responsible owners.",
+          "it": "Mappa fasi, problemi degli input, decisioni e responsabili."
+        },
+        "explanation": {
+          "en": "Process discovery identifies the actual bottleneck.",
+          "it": "L’analisi individua il collo di bottiglia reale."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Automate every existing step immediately.",
+          "it": "Automatizza subito ogni fase."
+        },
+        "explanation": {
+          "en": "This can accelerate a defective process.",
+          "it": "Può accelerare un processo difettoso."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Choose a model before understanding the task.",
+          "it": "Scegli il modello prima dell’attività."
+        },
+        "explanation": {
+          "en": "Requirements should guide model choice.",
+          "it": "I requisiti devono guidare la scelta."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Measure only output word count.",
+          "it": "Misura solo parole generate."
+        },
+        "explanation": {
+          "en": "Volume does not measure process value.",
+          "it": "Il volume non misura valore."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d4"],
+    "moduleIds": ["af-workflows"],
+    "objectiveIds": ["af-workflows-o1"],
+    "keywords": ["workflows"],
+    "explanation": {
+      "en": "Process discovery identifies the actual bottleneck.",
+      "it": "L’analisi individua il collo di bottiglia reale."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-workflows-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A pilot reduces drafting time but increases review effort. Which metric best assesses improvement?",
+      "it": "Una prova riduce la stesura ma aumenta la revisione. Quale metrica valuta il miglioramento?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Time to an approved correct output, including rework and exceptions.",
+          "it": "Tempo fino al risultato corretto e approvato, incluse rilavorazioni."
+        },
+        "explanation": {
+          "en": "End-to-end measurement captures the real tradeoff.",
+          "it": "La misura completa coglie il compromesso reale."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Number of drafts generated per minute.",
+          "it": "Bozze al minuto."
+        },
+        "explanation": {
+          "en": "Draft throughput omits verification.",
+          "it": "Ignora la verifica."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Length of the prompt.",
+          "it": "Lunghezza del prompt."
+        },
+        "explanation": {
+          "en": "Prompt length is not the business outcome.",
+          "it": "Non è il risultato aziendale."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "The most favorable individual example.",
+          "it": "Il singolo caso migliore."
+        },
+        "explanation": {
+          "en": "Cherry-picking is not representative evidence.",
+          "it": "Un caso selezionato non è rappresentativo."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d4"],
+    "moduleIds": ["af-workflows"],
+    "objectiveIds": ["af-workflows-o2"],
+    "keywords": ["workflows"],
+    "explanation": {
+      "en": "End-to-end measurement captures the real tradeoff.",
+      "it": "La misura completa coglie il compromesso reale."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-workflows-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "Which TWO items make a workflow handoff maintainable?",
+      "it": "Quali DUE elementi rendono mantenibile un passaggio di consegne?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Documented source versions, instructions, and review criteria.",
+          "it": "Versioni delle fonti, istruzioni e criteri di revisione documentati."
+        },
+        "explanation": {
+          "en": "These make behavior reproducible and reviewable.",
+          "it": "Rendono il comportamento riproducibile e verificabile."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "An owner and explicit route for unresolved exceptions.",
+          "it": "Un responsabile e un percorso per le eccezioni."
+        },
+        "explanation": {
+          "en": "Ownership prevents failures from being silently abandoned.",
+          "it": "La responsabilità evita abbandoni silenziosi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Dependence on the author’s private conversation history.",
+          "it": "Dipendenza dalla chat privata dell’autore."
+        },
+        "explanation": {
+          "en": "Others cannot reliably reproduce hidden context.",
+          "it": "Altri non possono riprodurre contesto nascosto."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "A promise that all generated text is automatically approved.",
+          "it": "La promessa che ogni testo sia approvato automaticamente."
+        },
+        "explanation": {
+          "en": "Generation is not approval or quality assurance.",
+          "it": "Generazione non significa approvazione."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["af-d4"],
+    "moduleIds": ["af-workflows"],
+    "objectiveIds": ["af-workflows-o3"],
+    "keywords": ["workflows"],
+    "explanation": {
+      "en": "These make behavior reproducible and reviewable. Ownership prevents failures from being silently abandoned.",
+      "it": "Rendono il comportamento riproducibile e verificabile. La responsabilità evita abbandoni silenziosi."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-knowledge-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "Which distinction between Project instructions and knowledge is most useful?",
+      "it": "Quale distinzione tra istruzioni e conoscenza del Project è utile?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Instructions guide behavior; knowledge provides reference evidence.",
+          "it": "Le istruzioni guidano il comportamento; le fonti forniscono prove."
+        },
+        "explanation": {
+          "en": "Separating roles improves clarity and maintenance.",
+          "it": "Separare i ruoli migliora chiarezza e manutenzione."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Knowledge is guaranteed correct while instructions are optional.",
+          "it": "La conoscenza è sempre corretta e le istruzioni facoltative."
+        },
+        "explanation": {
+          "en": "Uploaded sources and generated use of them can be wrong.",
+          "it": "Fonti e loro uso possono essere errati."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Uploading knowledge retrains the model permanently.",
+          "it": "Caricare fonti riaddestra permanentemente il modello."
+        },
+        "explanation": {
+          "en": "Providing context is distinct from updating model parameters.",
+          "it": "Fornire contesto è diverso dal modificare parametri."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Instructions replace document access controls.",
+          "it": "Le istruzioni sostituiscono i permessi."
+        },
+        "explanation": {
+          "en": "Access must be enforced by the system.",
+          "it": "Gli accessi vanno applicati dal sistema."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d5"],
+    "moduleIds": ["af-knowledge"],
+    "objectiveIds": ["af-knowledge-o1"],
+    "keywords": ["knowledge"],
+    "explanation": {
+      "en": "Separating roles improves clarity and maintenance.",
+      "it": "Separare i ruoli migliora chiarezza e manutenzione."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://www.anthropic.com/engineering/contextual-retrieval"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-knowledge-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A policy changes frequently and answers must cite current passages. Which principle best fits?",
+      "it": "Una policy cambia spesso e le risposte devono citare passaggi attuali. Quale principio è adeguato?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Maintain current sources and retrieve relevant evidence at answer time.",
+          "it": "Mantieni fonti attuali e recupera prove pertinenti per la risposta."
+        },
+        "explanation": {
+          "en": "Retrieval supports changing facts and inspectable provenance.",
+          "it": "Il retrieval supporta fatti variabili e provenienza verificabile."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Assume training knowledge automatically updates when a policy changes.",
+          "it": "Presumi che l’addestramento si aggiorni con la policy."
+        },
+        "explanation": {
+          "en": "Model parameters do not track arbitrary source changes.",
+          "it": "I parametri non seguono automaticamente le fonti."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Keep all old versions without effective dates.",
+          "it": "Mantieni vecchie versioni senza date."
+        },
+        "explanation": {
+          "en": "Unlabeled versions create conflicts and stale answers.",
+          "it": "Versioni senza date creano conflitti."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Disable uncertainty responses so every question is answered.",
+          "it": "Vieta risposte incerte per rispondere sempre."
+        },
+        "explanation": {
+          "en": "This encourages unsupported answers.",
+          "it": "Favorisce risposte senza prove."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d5"],
+    "moduleIds": ["af-knowledge"],
+    "objectiveIds": ["af-knowledge-o3"],
+    "keywords": ["knowledge"],
+    "explanation": {
+      "en": "Retrieval supports changing facts and inspectable provenance.",
+      "it": "Il retrieval supporta fatti variabili e provenienza verificabile."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://www.anthropic.com/engineering/contextual-retrieval"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-knowledge-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "A retrieved excerpt omits an exception found in the next paragraph. Which TWO checks localize the problem?",
+      "it": "Un estratto recuperato omette un’eccezione nel paragrafo successivo. Quali DUE controlli localizzano il problema?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Compare retrieved passages with the authoritative complete rule.",
+          "it": "Confronta i passaggi recuperati con la regola completa."
+        },
+        "explanation": {
+          "en": "This reveals evidence lost during retrieval or chunking.",
+          "it": "Mostra prove perse nel retrieval o nel chunking."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Check whether the answer is faithful to the evidence actually supplied.",
+          "it": "Verifica fedeltà della risposta alle prove effettivamente fornite."
+        },
+        "explanation": {
+          "en": "This separates retrieval failure from synthesis failure.",
+          "it": "Separa errore di recupero e di sintesi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Ask only whether the final answer sounds polished.",
+          "it": "Valuta solo lo stile finale."
+        },
+        "explanation": {
+          "en": "Style cannot locate evidence loss.",
+          "it": "Lo stile non localizza perdite di prove."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Conclude that a larger model always solves the issue.",
+          "it": "Concludi che un modello maggiore risolve sempre."
+        },
+        "explanation": {
+          "en": "Missing evidence requires fixing the evidence pipeline.",
+          "it": "Prove mancanti richiedono correzione della pipeline."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["af-d5"],
+    "moduleIds": ["af-knowledge"],
+    "objectiveIds": ["af-knowledge-o2"],
+    "keywords": ["knowledge"],
+    "explanation": {
+      "en": "This reveals evidence lost during retrieval or chunking. This separates retrieval failure from synthesis failure.",
+      "it": "Mostra prove perse nel retrieval o nel chunking. Separa errore di recupero e di sintesi."
+    },
+    "references": [
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://www.anthropic.com/engineering/contextual-retrieval"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-governance-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A trend analysis does not need customer names. What is the best first data-handling principle?",
+      "it": "Un’analisi di tendenze non richiede nomi dei clienti. Quale principio applicare?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Use the minimum approved data necessary for the purpose.",
+          "it": "Usa il minimo dei dati approvati necessario allo scopo."
+        },
+        "explanation": {
+          "en": "Data minimization reduces unnecessary exposure.",
+          "it": "La minimizzazione riduce esposizioni inutili."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Upload all fields because the task is internal.",
+          "it": "Carica tutto perché l’attività è interna."
+        },
+        "explanation": {
+          "en": "Internal purpose does not authorize every destination or field.",
+          "it": "Lo scopo interno non autorizza ogni dato o destinazione."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Use a prompt promising deletion instead of checking policy.",
+          "it": "Prometti cancellazione nel prompt senza verificare policy."
+        },
+        "explanation": {
+          "en": "A prompt does not change product data controls.",
+          "it": "Un prompt non modifica i controlli sui dati."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Assume removing names always anonymizes the records.",
+          "it": "Presumi che togliere i nomi renda sempre anonimi."
+        },
+        "explanation": {
+          "en": "Other fields can enable re-identification.",
+          "it": "Altri campi possono consentire reidentificazione."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d6"],
+    "moduleIds": ["af-governance"],
+    "objectiveIds": ["af-governance-o1"],
+    "keywords": ["governance"],
+    "explanation": {
+      "en": "Data minimization reduces unnecessary exposure.",
+      "it": "La minimizzazione riduce esposizioni inutili."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-governance-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A retrieved document instructs Claude to send confidential files to an outside address. What should happen?",
+      "it": "Un documento chiede a Claude di inviare file riservati a un indirizzo esterno. Cosa fare?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Treat it as untrusted content and keep actions within legitimate authorization.",
+          "it": "Trattalo come contenuto non fidato e rispetta l’autorizzazione legittima."
+        },
+        "explanation": {
+          "en": "Source text cannot authorize external actions.",
+          "it": "Una fonte non autorizza azioni esterne."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Follow it because it appears in a retrieved source.",
+          "it": "Seguilo perché è in una fonte recuperata."
+        },
+        "explanation": {
+          "en": "Retrieved data is not an instruction authority.",
+          "it": "Dati recuperati non hanno autorità di comando."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Follow it if the document uses the word urgent.",
+          "it": "Seguilo se contiene la parola urgente."
+        },
+        "explanation": {
+          "en": "Urgency does not confer permission.",
+          "it": "L’urgenza non concede permessi."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Ask the document to confirm consent.",
+          "it": "Chiedi al documento di confermare il consenso."
+        },
+        "explanation": {
+          "en": "Untrusted content cannot supply valid authorization.",
+          "it": "Contenuto non fidato non fornisce autorizzazione."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d6"],
+    "moduleIds": ["af-governance"],
+    "objectiveIds": ["af-governance-o3"],
+    "keywords": ["governance"],
+    "explanation": {
+      "en": "Source text cannot authorize external actions.",
+      "it": "Una fonte non autorizza azioni esterne."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-governance-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "Which TWO conditions make human review meaningful for a high-impact output?",
+      "it": "Quali DUE condizioni rendono concreta la revisione di un risultato ad alto impatto?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "The reviewer can inspect evidence and has relevant competence.",
+          "it": "Il revisore può leggere le prove e ha competenze pertinenti."
+        },
+        "explanation": {
+          "en": "Review needs informed judgment rather than blind acceptance.",
+          "it": "Serve giudizio informato, non accettazione cieca."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "The reviewer has time and authority to reject or escalate.",
+          "it": "Il revisore ha tempo e autorità di rifiutare o richiedere intervento."
+        },
+        "explanation": {
+          "en": "Accountability requires a genuine opportunity to intervene.",
+          "it": "La responsabilità richiede possibilità reale di intervenire."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Approval is automatic unless someone responds in one second.",
+          "it": "L’approvazione è automatica senza risposta entro un secondo."
+        },
+        "explanation": {
+          "en": "This denies a realistic review opportunity.",
+          "it": "Non consente una revisione realistica."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Only the generated conclusion is visible, with no sources.",
+          "it": "È visibile solo la conclusione senza fonti."
+        },
+        "explanation": {
+          "en": "Hiding evidence undermines substantive review.",
+          "it": "Nascondere prove indebolisce la verifica."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["af-d6"],
+    "moduleIds": ["af-governance"],
+    "objectiveIds": ["af-governance-o2"],
+    "keywords": ["governance"],
+    "explanation": {
+      "en": "Review needs informed judgment rather than blind acceptance. Accountability requires a genuine opportunity to intervene.",
+      "it": "Serve giudizio informato, non accettazione cieca. La responsabilità richiede possibilità reale di intervenire."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-troubleshooting-q1",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "An answer omits a date that was never supplied. What should be fixed first?",
+      "it": "Una risposta omette una data mai fornita. Cosa correggere prima?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Provide the authoritative date or explicitly permit unknown.",
+          "it": "Fornisci la data autorevole o consenti non indicato."
+        },
+        "explanation": {
+          "en": "Missing evidence is not solved by confident guessing.",
+          "it": "Prove mancanti non si risolvono con ipotesi sicure."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Retry unchanged until a date appears.",
+          "it": "Riprova identico finché compare una data."
+        },
+        "explanation": {
+          "en": "A generated date may be fabricated.",
+          "it": "La data generata potrebbe essere inventata."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Increase the requested prose length.",
+          "it": "Aumenta la lunghezza richiesta."
+        },
+        "explanation": {
+          "en": "Length does not add missing evidence.",
+          "it": "La lunghezza non aggiunge prove."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Treat any plausible date as correct.",
+          "it": "Considera corretta una data plausibile."
+        },
+        "explanation": {
+          "en": "Plausibility is not verification.",
+          "it": "La plausibilità non è verifica."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "easy",
+    "domainIds": ["af-d7"],
+    "moduleIds": ["af-troubleshooting"],
+    "objectiveIds": ["af-troubleshooting-o1"],
+    "keywords": ["troubleshooting"],
+    "explanation": {
+      "en": "Missing evidence is not solved by confident guessing.",
+      "it": "Prove mancanti non si risolvono con ipotesi sicure."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-troubleshooting-q2",
+    "certificationId": "associate-foundations",
+    "type": "single",
+    "question": {
+      "en": "A prompt change fixes one case but breaks previously successful ones. What is this, and what is the next step?",
+      "it": "Una modifica corregge un caso e peggiora quelli riusciti. Cos’è e cosa fare?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "A regression; compare versions on a fixed representative set before adopting.",
+          "it": "Una regressione; confronta versioni su casi fissi rappresentativi."
+        },
+        "explanation": {
+          "en": "Regression checks prevent local fixes from silently reducing quality.",
+          "it": "I test evitano che correzioni locali peggiorino la qualità."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Proof that all older cases are irrelevant.",
+          "it": "Prova che i casi vecchi non contano."
+        },
+        "explanation": {
+          "en": "Earlier valid requirements still matter.",
+          "it": "I requisiti precedenti restano validi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "A reason to stop measuring quality.",
+          "it": "Un motivo per smettere di misurare."
+        },
+        "explanation": {
+          "en": "Measurement is needed to understand the tradeoff.",
+          "it": "Serve misurare il compromesso."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "A guarantee the new model is more intelligent.",
+          "it": "Garanzia di maggiore intelligenza."
+        },
+        "explanation": {
+          "en": "Mixed outcomes do not establish universal improvement.",
+          "it": "Esiti misti non dimostrano miglioramento universale."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["af-d7"],
+    "moduleIds": ["af-troubleshooting"],
+    "objectiveIds": ["af-troubleshooting-o2"],
+    "keywords": ["troubleshooting"],
+    "explanation": {
+      "en": "Regression checks prevent local fixes from silently reducing quality.",
+      "it": "I test evitano che correzioni locali peggiorino la qualità."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "af-troubleshooting-q3",
+    "certificationId": "associate-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "A source connector times out and the assistant reports “the policy does not exist.” Which TWO changes are needed?",
+      "it": "Un connettore va in timeout e l’assistente dice “la policy non esiste”. Quali DUE modifiche servono?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Distinguish retrieval failure from a successful empty result.",
+          "it": "Distingui errore di recupero e ricerca riuscita senza risultati."
+        },
+        "explanation": {
+          "en": "Failure is not evidence of absence.",
+          "it": "Un errore non prova l’assenza."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Expose the limitation and use an approved recovery or escalation route.",
+          "it": "Spiega il limite e usa un recupero o un’escalation approvata."
+        },
+        "explanation": {
+          "en": "An honest recovery path prevents unsupported conclusions.",
+          "it": "Un recupero trasparente evita conclusioni infondate."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Hide the timeout to keep the experience smooth.",
+          "it": "Nascondi il timeout per rendere fluida l’esperienza."
+        },
+        "explanation": {
+          "en": "Hiding errors creates false certainty.",
+          "it": "Nascondere errori crea falsa certezza."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Create a plausible policy to complete the task.",
+          "it": "Inventa una policy plausibile per completare."
+        },
+        "explanation": {
+          "en": "Fabrication is not a valid recovery.",
+          "it": "Inventare non è recuperare."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["af-d7"],
+    "moduleIds": ["af-troubleshooting"],
+    "objectiveIds": ["af-troubleshooting-o1"],
+    "keywords": ["troubleshooting"],
+    "explanation": {
+      "en": "Failure is not evidence of absence. An honest recovery path prevents unsupported conclusions.",
+      "it": "Un errore non prova l’assenza. Un recupero trasparente evita conclusioni infondate."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "df-tools-q1",
+    "certificationId": "developer-foundations",
+    "type": "single",
+    "question": {
+      "en": "A client tool request has schema-valid arguments. What must still occur before execution?",
+      "it": "Una chiamata client ha argomenti validi nello schema. Cosa serve prima dell’esecuzione?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Application-side authorization and business-rule validation.",
+          "it": "Autorizzazione e regole aziendali nell’applicazione."
+        },
+        "explanation": {
+          "en": "Structural validity does not establish permission or policy compliance.",
+          "it": "Validità strutturale non prova permessi o conformità."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Nothing; the schema is the authorization system.",
+          "it": "Nulla; lo schema autorizza."
+        },
+        "explanation": {
+          "en": "Schemas describe shape rather than access rights.",
+          "it": "Gli schemi descrivono struttura, non accessi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Ask the model to promise the action is safe.",
+          "it": "Chiedi al modello di promettere sicurezza."
+        },
+        "explanation": {
+          "en": "A promise cannot enforce access control.",
+          "it": "Una promessa non applica controlli."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Execute with administrator privileges to avoid errors.",
+          "it": "Esegui come amministratore per evitare errori."
+        },
+        "explanation": {
+          "en": "Excessive privileges violate least privilege.",
+          "it": "Privilegi eccessivi violano il minimo privilegio."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["df-d8"],
+    "moduleIds": ["df-tools"],
+    "objectiveIds": ["df-tools-o3"],
+    "keywords": ["tools"],
+    "explanation": {
+      "en": "Structural validity does not establish permission or policy compliance.",
+      "it": "Validità strutturale non prova permessi o conformità."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "df-tools-q2",
+    "certificationId": "developer-foundations",
+    "type": "single",
+    "question": {
+      "en": "A tool request completed, but its response was lost. Which retry strategy is safest for a state-changing action?",
+      "it": "L’azione è stata inviata ma la risposta è persa. Quale strategia è più sicura?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Reconcile outcome or use supported idempotency before retrying.",
+          "it": "Riconcilia l’esito o usa idempotenza supportata prima di riprovare."
+        },
+        "explanation": {
+          "en": "An ambiguous failure may follow a committed action.",
+          "it": "Un errore ambiguo può seguire un’azione già completata."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Retry immediately with a new unrelated operation ID.",
+          "it": "Riprova subito con un ID diverso."
+        },
+        "explanation": {
+          "en": "This can duplicate the mutation.",
+          "it": "Può duplicare l’operazione."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Assume all timeouts mean no action occurred.",
+          "it": "Presumi che timeout significhi nessuna azione."
+        },
+        "explanation": {
+          "en": "Timeout does not prove rollback.",
+          "it": "Un timeout non prova annullamento."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Report success without checking.",
+          "it": "Segnala successo senza controllo."
+        },
+        "explanation": {
+          "en": "The outcome is not yet established.",
+          "it": "L’esito non è verificato."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "hard",
+    "domainIds": ["df-d8"],
+    "moduleIds": ["df-tools"],
+    "objectiveIds": ["df-tools-o3"],
+    "keywords": ["tools"],
+    "explanation": {
+      "en": "An ambiguous failure may follow a committed action.",
+      "it": "Un errore ambiguo può seguire un’azione già completata."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "df-tools-q3",
+    "certificationId": "developer-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "Which TWO details preserve a client tool-use conversation correctly?",
+      "it": "Quali DUE dettagli preservano una conversazione con strumenti client?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Retain the assistant message containing the structured tool request.",
+          "it": "Conserva il messaggio con la richiesta strutturata."
+        },
+        "explanation": {
+          "en": "The conversation must preserve the request context.",
+          "it": "La conversazione deve preservare la richiesta."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Return the result associated with its original tool-use ID.",
+          "it": "Restituisci il risultato con l’ID originale."
+        },
+        "explanation": {
+          "en": "Correlation lets the model interpret the proper result.",
+          "it": "Il collegamento permette di interpretare il risultato giusto."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Replace all results with “done” regardless of errors.",
+          "it": "Sostituisci tutti i risultati con “fatto”."
+        },
+        "explanation": {
+          "en": "This loses content, correlation, and error information.",
+          "it": "Perde contenuto, correlazione ed errori."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Dispatch server tools as arbitrary local shell commands.",
+          "it": "Esegui strumenti server come comandi shell locali."
+        },
+        "explanation": {
+          "en": "Server and client execution boundaries differ.",
+          "it": "Strumenti server e client hanno confini diversi."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "medium",
+    "domainIds": ["df-d8"],
+    "moduleIds": ["df-tools"],
+    "objectiveIds": ["df-tools-o2"],
+    "keywords": ["tools"],
+    "explanation": {
+      "en": "The conversation must preserve the request context. Correlation lets the model interpret the proper result.",
+      "it": "La conversazione deve preservare la richiesta. Il collegamento permette di interpretare il risultato giusto."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arf-orchestration-q1",
+    "certificationId": "architect-foundations",
+    "type": "single",
+    "question": {
+      "en": "A fixed extraction pipeline always follows known branches. What is the simplest appropriate starting architecture?",
+      "it": "Una pipeline di estrazione segue sempre rami noti. Qual è il punto di partenza più semplice?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "An explicit workflow with validation gates.",
+          "it": "Un workflow esplicito con controlli."
+        },
+        "explanation": {
+          "en": "Known control flow benefits from inspectable deterministic structure.",
+          "it": "Un flusso noto beneficia di una struttura deterministica ispezionabile."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "A large unrestricted agent team for every input.",
+          "it": "Molti agenti senza limiti per ogni input."
+        },
+        "explanation": {
+          "en": "This adds complexity without a stated need.",
+          "it": "Aggiunge complessità senza bisogno dimostrato."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "No validation because the sequence is fixed.",
+          "it": "Nessuna verifica perché il percorso è fisso."
+        },
+        "explanation": {
+          "en": "Fixed flow does not guarantee correct data.",
+          "it": "Un percorso fisso non garantisce dati corretti."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "A natural-language approval note as the only security gate.",
+          "it": "Una nota nel prompt come unico controllo."
+        },
+        "explanation": {
+          "en": "Textual guidance does not enforce security invariants.",
+          "it": "Il testo non applica invarianti di sicurezza."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["arf-d1"],
+    "moduleIds": ["arf-orchestration"],
+    "objectiveIds": ["arf-orchestration-o1"],
+    "keywords": ["orchestration"],
+    "explanation": {
+      "en": "Known control flow benefits from inspectable deterministic structure.",
+      "it": "Un flusso noto beneficia di una struttura deterministica ispezionabile."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arf-orchestration-q2",
+    "certificationId": "architect-foundations",
+    "type": "multiple",
+    "question": {
+      "en": "A coordinator delegates research to isolated workers. Which TWO handoff items are essential?",
+      "it": "Un coordinatore delega ricerca ad agenti isolati. Quali DUE elementi servono?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Explicit scope, task context, and required output contract.",
+          "it": "Ambito, contesto e formato richiesto espliciti."
+        },
+        "explanation": {
+          "en": "Workers need the relevant context to perform bounded work.",
+          "it": "Gli agenti necessitano di contesto per compiti delimitati."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Source identifiers, dates, and limitations with findings.",
+          "it": "ID delle fonti, date e limiti dei risultati."
+        },
+        "explanation": {
+          "en": "These preserve provenance during synthesis.",
+          "it": "Preservano provenienza nella sintesi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "An assumption that every worker shares all prior history.",
+          "it": "Presumere che tutti condividano la cronologia."
+        },
+        "explanation": {
+          "en": "Isolated contexts must receive relevant information explicitly.",
+          "it": "Contesti isolati richiedono passaggi espliciti."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Only polished prose with all uncertainty removed.",
+          "it": "Solo prosa elegante senza incertezza."
+        },
+        "explanation": {
+          "en": "This hides evidence gaps.",
+          "it": "Nasconde lacune nelle prove."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["arf-d1"],
+    "moduleIds": ["arf-orchestration"],
+    "objectiveIds": ["arf-orchestration-o2"],
+    "keywords": ["orchestration"],
+    "explanation": {
+      "en": "Workers need the relevant context to perform bounded work. These preserve provenance during synthesis.",
+      "it": "Gli agenti necessitano di contesto per compiti delimitati. Preservano provenienza nella sintesi."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arf-orchestration-q3",
+    "certificationId": "architect-foundations",
+    "type": "single",
+    "question": {
+      "en": "An agent must never issue an adjustment before identity verification. What is the strongest control?",
+      "it": "Un agente non deve rettificare prima di verificare l’identità. Quale controllo è più forte?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Block the action in application code until verified prerequisites hold.",
+          "it": "Blocca l’azione nel codice finché i prerequisiti non sono verificati."
+        },
+        "explanation": {
+          "en": "Programmatic gates enforce invariant ordering at execution.",
+          "it": "Controlli programmatici applicano l’ordine nell’esecuzione."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Repeat the requirement in a longer system prompt.",
+          "it": "Ripeti il requisito in un prompt più lungo."
+        },
+        "explanation": {
+          "en": "Prompt compliance alone is probabilistic.",
+          "it": "Il rispetto del solo prompt è probabilistico."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Ask the model for a confidence estimate before acting.",
+          "it": "Chiedi una stima di sicurezza prima di agire."
+        },
+        "explanation": {
+          "en": "Confidence is not verified identity.",
+          "it": "Sicurezza espressa non è identità verificata."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Trust any worker message containing the word verified.",
+          "it": "Fidati di messaggi con la parola verificato."
+        },
+        "explanation": {
+          "en": "Unvalidated text is not a trustworthy gate state.",
+          "it": "Testo non validato non prova lo stato del controllo."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "hard",
+    "domainIds": ["arf-d1"],
+    "moduleIds": ["arf-orchestration"],
+    "objectiveIds": ["arf-orchestration-o3"],
+    "keywords": ["orchestration"],
+    "explanation": {
+      "en": "Programmatic gates enforce invariant ordering at execution.",
+      "it": "Controlli programmatici applicano l’ordine nell’esecuzione."
+    },
+    "references": [
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arp-retrieval-q1",
+    "certificationId": "architect-professional",
+    "type": "single",
+    "question": {
+      "en": "RAG answers fail on exact policy codes but work on paraphrases. What should be evaluated first?",
+      "it": "Il RAG fallisce su codici esatti ma funziona con parafrasi. Cosa valutare prima?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Keyword or hybrid retrieval on a labeled exact-lookup query set.",
+          "it": "Ricerca per parole chiave o ibrida su casi etichettati."
+        },
+        "explanation": {
+          "en": "Retrieval should match the identifier-heavy query pattern.",
+          "it": "Il retrieval va adattato alle domande con identificativi."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Only a more elaborate generation tone.",
+          "it": "Solo uno stile più elaborato."
+        },
+        "explanation": {
+          "en": "Tone cannot retrieve missing evidence.",
+          "it": "Lo stile non recupera prove mancanti."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "A rule that every answer must be confident.",
+          "it": "Una regola di sicurezza obbligatoria."
+        },
+        "explanation": {
+          "en": "Forced confidence can conceal retrieval failure.",
+          "it": "La sicurezza imposta nasconde errori di retrieval."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Removing source identifiers from the index.",
+          "it": "Elimina identificativi dall’indice."
+        },
+        "explanation": {
+          "en": "This removes the very signal needed.",
+          "it": "Elimina proprio il segnale necessario."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "medium",
+    "domainIds": ["arp-d3"],
+    "moduleIds": ["arp-retrieval"],
+    "objectiveIds": ["arp-retrieval-o1"],
+    "keywords": ["retrieval"],
+    "explanation": {
+      "en": "Retrieval should match the identifier-heavy query pattern.",
+      "it": "Il retrieval va adattato alle domande con identificativi."
+    },
+    "references": [
+      "https://www.anthropic.com/engineering/contextual-retrieval",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arp-retrieval-q2",
+    "certificationId": "architect-professional",
+    "type": "multiple",
+    "question": {
+      "en": "Which TWO controls protect a permission-aware RAG system?",
+      "it": "Quali DUE controlli proteggono un RAG con permessi?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Filter retrieved documents using the authenticated user’s authorized scope.",
+          "it": "Filtra documenti secondo l’ambito autorizzato dell’utente."
+        },
+        "explanation": {
+          "en": "Unauthorized evidence should not enter generation context.",
+          "it": "Prove non autorizzate non devono entrare nel contesto."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Ensure caches respect the same permission boundaries.",
+          "it": "Assicura che le cache rispettino gli stessi permessi."
+        },
+        "explanation": {
+          "en": "Caches can otherwise leak previously retrieved information.",
+          "it": "Altrimenti le cache possono divulgare dati recuperati."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Retrieve everything and ask the model not to reveal secrets.",
+          "it": "Recupera tutto e chiedi al modello di non rivelare segreti."
+        },
+        "explanation": {
+          "en": "A prompt is not a substitute for access control.",
+          "it": "Un prompt non sostituisce i controlli."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Use a shared unrestricted answer cache for all users.",
+          "it": "Usa una cache senza restrizioni per tutti."
+        },
+        "explanation": {
+          "en": "This can cross access boundaries.",
+          "it": "Può oltrepassare i confini degli accessi."
+        }
+      }
+    ],
+    "correctAnswers": ["a", "b"],
+    "difficulty": "hard",
+    "domainIds": ["arp-d3"],
+    "moduleIds": ["arp-retrieval"],
+    "objectiveIds": ["arp-retrieval-o2"],
+    "keywords": ["retrieval"],
+    "explanation": {
+      "en": "Unauthorized evidence should not enter generation context. Caches can otherwise leak previously retrieved information.",
+      "it": "Prove non autorizzate non devono entrare nel contesto. Altrimenti le cache possono divulgare dati recuperati."
+    },
+    "references": [
+      "https://www.anthropic.com/engineering/contextual-retrieval",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  },
+  {
+    "id": "arp-retrieval-q3",
+    "certificationId": "architect-professional",
+    "type": "single",
+    "question": {
+      "en": "The correct source passage appears in retrieved context, but the answer reverses its exception. Where should diagnosis focus first?",
+      "it": "Il passaggio corretto è nel contesto ma la risposta inverte l’eccezione. Dove concentrarsi?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "en": "Synthesis faithfulness and answer validation.",
+          "it": "Fedeltà della sintesi e validazione della risposta."
+        },
+        "explanation": {
+          "en": "The evidence was present; its use failed.",
+          "it": "La prova era presente: è fallito il suo uso."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "en": "Only increasing the number of retrieved passages.",
+          "it": "Solo aumentare passaggi recuperati."
+        },
+        "explanation": {
+          "en": "More evidence does not directly fix misuse of present evidence.",
+          "it": "Più prove non correggono direttamente l’uso errato."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "en": "Deleting all exception passages.",
+          "it": "Eliminare tutte le eccezioni."
+        },
+        "explanation": {
+          "en": "This removes necessary evidence.",
+          "it": "Elimina prove necessarie."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "en": "Treating fluent wording as proof of correctness.",
+          "it": "Considerare la scorrevolezza prova di correttezza."
+        },
+        "explanation": {
+          "en": "Fluency does not establish faithfulness.",
+          "it": "Scorrevolezza non prova fedeltà."
+        }
+      }
+    ],
+    "correctAnswers": ["a"],
+    "difficulty": "hard",
+    "domainIds": ["arp-d3"],
+    "moduleIds": ["arp-retrieval"],
+    "objectiveIds": ["arp-retrieval-o3"],
+    "keywords": ["retrieval"],
+    "explanation": {
+      "en": "The evidence was present; its use failed.",
+      "it": "La prova era presente: è fallito il suo uso."
+    },
+    "references": [
+      "https://www.anthropic.com/engineering/contextual-retrieval",
+      "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    ],
+    "verified": true,
+    "verifiedAt": "2026-11-08"
+  }
+]
